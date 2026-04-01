@@ -195,6 +195,18 @@ section {
   gap: var(--spacing4);
   flex-wrap: wrap;
 }
+.flex-center2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing4);
+  flex-wrap: wrap;
+}
+@media (max-width: 1300px) {
+  .flex-center2 {
+    justify-content: flex-start;
+  }
+}
 .flex-left {
   display: flex;
   flex-flow: row wrap;
@@ -330,6 +342,7 @@ section {
 /* Button azul */
 .btn3 {
   background-color: var(--color01);
+  width: fit-content;
 }
 .btn3:hover {
   background: var(--color03);
@@ -400,7 +413,7 @@ nav {
   }
 }
 .logo {
-  width: 140px;
+  width: 120px;
   margin: var(--spacing4);
 }
 .hero img {
@@ -442,6 +455,16 @@ nav {
   gap: var(--spacing4);
   font-weight: 600;
 }
+.section8 {
+  background-image: url(/img/pizza-bg.png);
+  background-size: cover;
+  background-position: top center;
+}
+@media (max-width: 500px) {
+  .section8 {
+    justify-content: center;
+  }
+}
 #trigo1,
 #trigo2 {
   position: absolute;
@@ -471,7 +494,7 @@ nav {
   position: absolute;
   width: 450px;
   left: -120px;
-  bottom: 500px;
+  bottom: 1300px;
 }
 
 /*breakpoints do trigo, e mudança de alinhamento dos textos no mobile */
@@ -486,7 +509,7 @@ nav {
   }
   #trigo3 {
     left: -150px;
-    bottom: 560px;
+    bottom: 1360px;
   }
 }
 @media (max-width: 1050px) {
@@ -500,7 +523,7 @@ nav {
   }
   #trigo3 {
     left: -180px;
-    bottom: 580px;
+    bottom: 1360px;
   }
 }
 @media (max-width: 860px) {
@@ -518,7 +541,7 @@ nav {
   }
   #trigo3 {
     left: -120px;
-    bottom: 700px;
+    bottom: 1400px;
     width: 300px;
   }
 }
@@ -544,8 +567,8 @@ nav {
     bottom: 0;
   }
   #trigo3 {
-    left: -120px;
-    bottom: 800px;
+    left: -172px;
+    bottom: 1600px;
     width: 300px;
   }
 }
@@ -559,8 +582,8 @@ nav {
     bottom: 0;
   }
   #trigo3 {
-    left: -130px;
-    bottom: 1000px;
+    left: -166px;
+    bottom: 1670px;
     width: 300px;
   }
 }
@@ -575,7 +598,7 @@ nav {
   }
   #trigo3 {
     left: -180px;
-    bottom: 1300px;
+    bottom: 2026px;
     width: 300px;
   }
 }
@@ -861,73 +884,196 @@ footer > .container > .col3 {
   }
 }
 #farinha1 {
-  height: 682px;
+  height: 650px;
   position: absolute;
   object-fit: contain;
-  right: -275px;
-  bottom: -100px;
+  right: -450px;
+  bottom: 555px;
   z-index: 30;
   pointer-events: none;
   will-change: transform;
 }
 .atributos {
   margin: 0 6rem;
+  width: 60%;
 }
 .atributos > .text-box {
   width: 80%;
 }
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
 }
 .atributos > .text-box {
   width: 70%;
 }
+.farinha-imagem {
+  width: 300px;
+  height: 300px;
+}
+@media (max-width: 1800px) {
+  .farinha-imagem {
+    width: 100px;
+    height: 100px;
+  }
+}
 /*breakpoints da farinha, e mudança de alinhamento dos textos no mobile */
-@media (max-width: 1250px) {
+@media (max-width: 1300px) {
   #farinha1 {
     height: 682px;
-    right: -275px;
-    bottom: -100px;
+    right: -339px;
+    bottom: 676px;
+  }
+  #atributos {
+    display: flex;
+    justify-content: flex-start;
   }
 }
 @media (max-width: 1050px) {
   #farinha1 {
-    height: 580px;
-    right: -167px;
-    bottom: 62px;
+    height: 630px;
+    right: -277px;
+    bottom: 700px;
   }
 }
 @media (max-width: 860px) {
+  .atributos {
+    margin: 2rem;
+  }
   .atributos > .text-box {
     width: 100%;
   }
   #farinha1 {
-    height: 515px;
-    right: 0;
-    bottom: -167px;
+    height: 635px;
+    right: -277px;
+    bottom: 750px;
+  }
+}
+@media (max-width: 530px) {
+  #farinha1 {
+    height: 500px;
+    right: -220px;
+    bottom: 795px;
   }
 }
 @media (max-width: 500px) {
   .atributos {
     width: 100%;
-    margin: 0 1rem 6rem 0;
+    margin: 1rem;
+  }
+  .farinha-imagem {
+    width: 300px;
+    height: 300px;
   }
   #farinha1 {
-    height: 682px;
-    right: -173px;
-    bottom: -100px;
+    height: 400px;
+    right: 0;
+    bottom: 892px;
+  }
+}
+@media (max-width: 490px) {
+  #farinha1 {
+    height: 400px;
+    right: 0;
+    bottom: 832px;
+  }
+}
+@media (max-width: 450px) {
+  #farinha1 {
+    height: 400px;
+    right: 0;
+    bottom: 907px;
   }
 }
 @media (max-width: 425px) {
   #farinha1 {
-    height: 682px;
-    right: -173px;
-    bottom: -100px;
+    height: 400px;
+    right: 0;
+    bottom: 963px;
+  }
+}
+@media (max-width: 375px) {
+  #farinha1 {
+    height: 400px;
+    right: 0;
+    bottom: 1092px;
   }
 }
 @media (max-width: 320px) {
   #farinha1 {
-    height: 682px;
-    right: -173px;
-    bottom: -100px;
+    height: 400px;
+    right: 0;
+    bottom: 1116px;
   }
+}
+
+/*Cadastro*/
+.section-cadastro {
+  flex-direction: column;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 60%;
+}
+@media (max-width: 800px) {
+  .section-cadastro {
+    width: 100%;
+  }
+}
+.section-cadastro .text-box {
+  max-width: 520px;
+  align-items: center;
+}
+
+/* Formulário */
+.form-cadastro {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing3);
+  width: 100%;
+}
+.form-cadastro input[type="text"],
+.form-cadastro input[type="email"] {
+  all: unset;
+  width: 100%;
+  padding: var(--spacing3) var(--spacing4);
+  border: 1px solid hsla(0, 0%, 100%, 0.35);
+  color: var(--color08);
+  font: var(--p);
+  background: hsla(0, 0%, 100%, 0.1);
+  box-sizing: border-box;
+  transition: border-color 0.2s ease;
+}
+.form-cadastro input[type="text"]:focus,
+.form-cadastro input[type="email"]:focus {
+  border-color: hsla(0, 0%, 100%, 0.8);
+  outline: none;
+}
+.form-cadastro input::placeholder {
+  color: hsla(0, 0%, 100%, 0.55);
+}
+.checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing3);
+  color: var(--color08);
+  font-size: 0.85rem;
+  line-height: 1.5;
+  cursor: pointer;
+  text-align: left;
+}
+.checkbox-label input[type="checkbox"] {
+  margin-top: 3px;
+  flex-shrink: 0;
+  accent-color: var(--color07);
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+.link-politica {
+  font: inherit;
+  font-size: inherit;
+  color: var(--color08);
+  text-decoration: underline;
+  opacity: 0.8;
+}
+.link-politica:hover {
+  opacity: 1;
 }
