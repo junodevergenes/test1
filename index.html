@@ -131,11 +131,20 @@
             cozinha.
           </p>
         </div>
-        <!-- <div class="receitas">carrossel de receitas</div> -->
-        <button class="btn1">
-          <a href="">Quero acessar todas as receitas</a
-          ><i class="ri-arrow-right-up-line"></i>
-        </button>
+        <div class="carousel-section">
+  <div class="carousel-track-wrapper">
+    <button class="arrow left" id="prev"><i class="ri-arrow-left-s-line"></i></button>
+    <div class="carousel-track" id="track"></div>
+    <button class="arrow right" id="next"><i class="ri-arrow-right-s-line"></i></button>
+  </div>
+  <div class="footer">
+    <button class="btn1" id="searchBtn" disabled>
+      Quero acessar todas as receitas
+      <i class="ri-arrow-right-up-line"></i>
+    </button>
+    <p class="selected-list" id="selectedList">Clique nos cards para selecionar receitas</p>
+  </div>
+</div>
       </section>
 
       <section class="section5 flex-center padding6">
@@ -198,6 +207,7 @@
     <script src="gsap.js"></script>
     <script src="gsap2.js"></script>
     <script src="menu.js"></script>
+    <script src="carrossel.js"></script>
 
   </body>
     <footer class="footer1 blue-bg white-text flex-center">
