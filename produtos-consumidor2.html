@@ -19,24 +19,36 @@
           alt="Famiglia Venturelli - Desde 1954"
       /></a>
       <img class="ham" src="/svg/menu-icon.svg" alt="Abrir menu" />
-      <nav class="nav-consumidor2 padding3 grey-bg">
-        <a href="#">Início</a>
-        <a href="#">Produtos</a>
+      <nav class="nav-consumidor2 grey-bg padding3">
+        <a href="index.html">Início</a>
+        <a href="produtos-consumidor1.html">Produtos</a>
         <a href="#">Receitas</a>
-        <a href="#">Embaixadores</a>
-        <a href="#">Momentos incomparáveis</a>
-        <a href="#">Livro de receitas</a>
+        <a href="produtos-consumidor2.html">Embaixadores</a>
+        <a href="produtos-consumidor3.html">Momentos incomparáveis</a>
+        <a href="alma-italiana.html">Livro de receitas</a>
         <a href="#">Contato</a>
         <a href="#">Trabalhe conosco</a>
       </nav>
     </header>
 
     <main>
-      <section class="hero">
-        <img
-          src="/img/banner-consumidor2.png"
-          alt="Colecione Momentos Incomparáveis para seus clientes"
-        />
+      <section class="hero-parallax">
+        <div class="layer layer-bg">
+          <img src="/img/banner3-layer-bg.png" alt="" />
+        </div>
+        <div class="layer layer-shape">
+          <img src="/img/banner3-layer-shape.png" alt="" />
+        </div>
+        <div class="layer layer-foreground">
+          <img src="/img/banner3-layer-foreground.png" alt="" />
+        </div>
+        <div class="hero-content">
+          <h1>
+            <span class="black-bg">Colecione</span><br />
+            <span class="black-bg">Momentos Incomparáveis</span><br />
+            <span class="black-bg">para seus clientes</span>
+          </h1>
+        </div>
       </section>
 
       <section
@@ -68,17 +80,19 @@
       <section class="produtos flex-center">
         <div class="container flex-center padding4 gap2">
           <!-- Purissima -->
-          <div class="card-produto2 white-text">
-            <img
-              class="img-produto"
-              src="/Produtos/FRENTE-PURÍSSIMA-1.png"
-              alt="Farinha Venturelli Puríssima"
-            />
-            <div class="produto-desc">
-              <h4>Puríssima</h4>
-              <img class="mais-icon" src="/svg/plus-icon.svg" alt="Mais" />
+          <a href="produto1.html">
+            <div class="card-produto2 white-text">
+              <img
+                class="img-produto"
+                src="/Produtos/FRENTE-PURÍSSIMA-1.png"
+                alt="Farinha Venturelli Puríssima"
+              />
+              <div class="produto-desc">
+                <h4>Puríssima</h4>
+                <img class="mais-icon" src="/svg/plus-icon.svg" alt="Mais" />
+              </div>
             </div>
-          </div>
+          </a>
           <!-- Forneria -->
           <div class="card-produto2 white-text">
             <img
@@ -180,6 +194,7 @@
     <script src="gsap2.js"></script>
     <script src="menu.js"></script>
     <script src="carrossel.js"></script>
+    <script src="banner.js"></script>
   </body>
   <footer class="footer2 white-text flex-center">
     <div class="container">
