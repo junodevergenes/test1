@@ -12,22 +12,83 @@
   </head>
   <body>
     <header>
-      <a href="/index.html"
-        ><img
+      <a href="/index.html">
+        <img
           class="logo"
           src="/svg/logo-header-cor.svg"
           alt="Famiglia Venturelli - Desde 1954"
-      /></a>
-      <img class="ham" src="/svg/menu-icon.svg" alt="Abrir menu" />
-      <nav class="nav-consumidor1 red-bg padding3">
-        <a href="index.html">Início</a>
-        <a href="produtos-consumidor1.html">Produtos</a>
-        <a href="#">Receitas</a>
-        <a href="produtos-consumidor2.html">Embaixadores</a>
-        <a href="produtos-consumidor3.html">Momentos incomparáveis</a>
-        <a href="alma-italiana.html">Livro de receitas</a>
-        <a href="#">Contato</a>
-        <a href="#">Trabalhe conosco</a>
+        />
+      </a>
+
+      <button class="ham" aria-label="Abrir menu" aria-expanded="false">
+        <img src="/svg/menu-icon.svg" alt="" aria-hidden="true" />
+      </button>
+
+      <nav
+        class="red-bg padding3"
+        role="navigation"
+        aria-label="Menu principal"
+      >
+        <a href="/index.html">Início</a>
+
+        <!-- ── Dropdown: Produtos ── -->
+        <div class="nav-dropdown" data-dropdown>
+          <button
+            class="nav-dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            aria-controls="dropdown-produtos"
+          >
+            Produtos
+            <i
+              class="ri-arrow-down-s-line nav-dropdown-icon"
+              aria-hidden="true"
+            ></i>
+          </button>
+          <ul class="nav-dropdown-menu" id="dropdown-produtos" role="menu">
+            <li role="none">
+              <a href="/produtos-consumidor1.html" role="menuitem"
+                >Uso Diário</a
+              >
+            </li>
+            <li role="none">
+              <a href="/produtos-consumidor2.html" role="menuitem"
+                >Uso Profissional</a
+              >
+            </li>
+            <li role="none">
+              <a href="/alma-italiana.html" role="menuitem">Alma Italiana</a>
+            </li>
+            <li role="none">
+              <a href="/produtos-consumidor3.html" role="menuitem"
+                >Como Comprar</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <a
+          href="https://materiais.moinhoglobo.com.br/inscricao-momentos-incomparaveis"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Momentos Incomparáveis</a
+        >
+
+        <a
+          href="https://materiais.moinhoglobo.com.br/formulario-materiais"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Livro de Receitas</a
+        >
+
+        <a href="/contato.html">Contato</a>
+
+        <a
+          href="https://moinhoglobo.com.br/sobre-nos/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Trabalhe Conosco</a
+        >
       </nav>
     </header>
 
@@ -67,11 +128,11 @@
             </p>
             <div class="ctas">
               <button class="btn2">
-                <a href="">Encontre um supermercado</a
+                <a href="https://portal.moinhoglobo.com.br/venturelli/">Encontre um supermercado</a
                 ><i class="ri-arrow-right-up-line"></i>
               </button>
               <button class="btn1">
-                <a href="">Compre Online</a
+                <a href="https://lojadotrigo.com.br/farinha-de-trigo?marcas[0]=venturelli&ordenarPor=mais-barato-ao-mais-caro">Compre Online</a
                 ><i class="ri-arrow-right-up-line"></i>
               </button>
             </div>
@@ -102,7 +163,7 @@
             </p>
             <div class="ctas">
               <button class="btn1">
-                <a href="">Compre Online</a
+                <a href="https://portal.moinhoglobo.com.br/cadastro">Compre Online</a
                 ><i class="ri-arrow-right-up-line"></i>
               </button>
             </div>

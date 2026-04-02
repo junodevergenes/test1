@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato – Famiglia Venturelli</title>
+    <link rel="stylesheet" href="/css/index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="/index.html">
+        <img
+          class="logo"
+          src="/svg/logo-header-cor.svg"
+          alt="Famiglia Venturelli - Desde 1954"
+        />
+      </a>
+      <button class="ham" aria-label="Abrir menu" aria-expanded="false">
+        <img src="/svg/menu-icon.svg" alt="" aria-hidden="true" />
+      </button>
+      <nav
+        class="red-bg padding3"
+        role="navigation"
+        aria-label="Menu principal"
+      >
+        <a href="/index.html">Início</a>
+        <div class="nav-dropdown" data-dropdown>
+          <button
+            class="nav-dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            aria-controls="dropdown-produtos"
+          >
+            Produtos
+            <i
+              class="ri-arrow-down-s-line nav-dropdown-icon"
+              aria-hidden="true"
+            ></i>
+          </button>
+          <ul class="nav-dropdown-menu" id="dropdown-produtos" role="menu">
+            <li role="none">
+              <a href="/produtos-consumidor1.html" role="menuitem"
+                >Uso Diário</a
+              >
+            </li>
+            <li role="none">
+              <a href="/produtos-consumidor2.html" role="menuitem"
+                >Uso Profissional</a
+              >
+            </li>
+            <li role="none">
+              <a href="/alma-italiana.html" role="menuitem">Alma Italiana</a>
+            </li>
+            <li role="none">
+              <a href="/produtos-consumidor3.html" role="menuitem"
+                >Como Comprar</a
+              >
+            </li>
+          </ul>
+        </div>
+        <a
+          href="https://materiais.moinhoglobo.com.br/inscricao-momentos-incomparaveis"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Momentos Incomparáveis</a
+        >
+        <a
+          href="https://materiais.moinhoglobo.com.br/formulario-materiais"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Livro de Receitas</a
+        >
+        <a href="/contato.html">Contato</a>
+        <a
+          href="https://moinhoglobo.com.br/sobre-nos/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Trabalhe Conosco</a
+        >
+      </nav>
+    </header>
+    <main>
+      <!-- ═══════════ TÍTULO + FORMULÁRIO ═══════════ -->
+      <section class="contato-main">
+        <!-- Esquerda: título editorial -->
+        <div class="contato-titulo">
+          <div>
+            <h1>Entre em<br />contato</h1>
+            <img
+              src="/svg/linha1.svg"
+              alt=""
+              class="linha-marca"
+              style="margin-top: 1rem"
+            />
+          </div>
+          <p>
+            Selecione um assunto e nossa equipe encaminhará sua mensagem à
+            pessoa certa, respondendo o mais breve possível.
+          </p>
+          <div class="contato-opcoes">
+            <div class="contato-opcao">
+              <span>Dúvida sobre produto</span>
+              <i class="ri-arrow-right-line"></i>
+            </div>
+            <div class="contato-opcao">
+              <span>Pedido / Compra</span>
+              <i class="ri-arrow-right-line"></i>
+            </div>
+            <div class="contato-opcao">
+              <span>Parceria comercial</span>
+              <i class="ri-arrow-right-line"></i>
+            </div>
+            <div class="contato-opcao">
+              <span>Trabalhe conosco</span>
+              <i class="ri-arrow-right-line"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Direita: formulário -->
+        <div class="contato-form-col">
+          <h2>Envie sua mensagem</h2>
+
+          <form class="form-contato" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" placeholder="Seu nome completo" />
+              </div>
+              <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="seu@email.com" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="telefone">Telefone</label>
+                <input
+                  type="text"
+                  id="telefone"
+                  placeholder="(00) 00000-0000"
+                />
+              </div>
+              <div class="form-group">
+                <label for="cidade">Cidade / Estado</label>
+                <input type="text" id="cidade" placeholder="Sua cidade – UF" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="assunto">Assunto</label>
+              <select id="assunto">
+                <option value="" disabled selected>Selecione um assunto</option>
+                <option>Dúvida sobre produto</option>
+                <option>Pedido / Compra</option>
+                <option>Parceria comercial</option>
+                <option>Trabalhe conosco</option>
+                <option>Elogio</option>
+                <option>Reclamação</option>
+                <option>Outro</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="mensagem">Mensagem</label>
+              <textarea
+                id="mensagem"
+                placeholder="Escreva sua mensagem..."
+              ></textarea>
+            </div>
+
+            <label class="checkbox-label">
+              <input type="checkbox" />
+              <span>
+                Concordo com o uso dos meus dados para resposta a esta mensagem,
+                conforme a
+                <a href="#" class="link-politica">Política de Privacidade</a>.
+              </span>
+            </label>
+
+            <button class="btn-enviar" type="submit">
+              Enviar mensagem <i class="ri-send-plane-line"></i>
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <!-- ═══════════ IMAGEM FULL-WIDTH ═══════════ -->
+      <div class="contato-imagem">
+        <img src="/img/alma-italiana-2.png" alt="Famiglia Venturelli" />
+      </div>
+
+      <!-- ═══════════ FAQ ═══════════ -->
+      <section class="faq-section">
+        <div class="faq-header">
+          <h2>Perguntas Frequentes</h2>
+          <img src="/svg/linha1.svg" alt="" class="linha-marca" />
+          <p>
+            Respostas rápidas para as dúvidas mais comuns sobre nossos produtos
+            e serviços.
+          </p>
+        </div>
+
+        <div class="faq-categorias">
+          <button class="faq-cat-btn active" data-filter="all">Todas</button>
+          <button class="faq-cat-btn" data-filter="produtos">Produtos</button>
+          <button class="faq-cat-btn" data-filter="compra">Como Comprar</button>
+          <button class="faq-cat-btn" data-filter="profissional">
+            Profissional
+          </button>
+          <button class="faq-cat-btn" data-filter="receitas">Receitas</button>
+        </div>
+
+        <div class="faq-lista" id="faqLista">
+          <div class="faq-item" data-cat="produtos">
+            <button class="faq-pergunta" aria-expanded="false">
+              <span
+                >Qual é a diferença entre as farinhas de uso diário e
+                profissional?</span
+              >
+              <i class="ri-add-line"></i>
+            </button>
+            <div class="faq-resposta">
+              <p>
+                As farinhas de <strong>uso diário</strong> são formuladas para
+                receitas caseiras — pães, bolos, massas e tortas — com
+                praticidade e qualidade garantida. Já as
+                <strong>profissionais</strong> possuem especificações técnicas
+                mais precisas de teor proteico, força (W) e extensibilidade
+                (P/L), atendendo padarias, pizzarias, confeitarias e cozinhas
+                industriais.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-cat="produtos">
+            <button class="faq-pergunta" aria-expanded="false">
+              <span>Os produtos Famiglia Venturelli contêm glúten?</span>
+              <i class="ri-add-line"></i>
+            </button>
+            <div class="faq-resposta">
+              <p>
+                Sim. As farinhas de trigo Famiglia Venturelli são derivadas do
+                trigo e contêm glúten naturalmente. Não são indicadas para
+                pessoas celíacas ou com intolerância ao glúten. A informação
+                sobre alérgenos está sempre presente no rótulo de cada
+                embalagem.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-cat="produtos">
+            <button class="faq-pergunta" aria-expanded="false">
+              <span>Como devo armazenar a farinha após abrir a embalagem?</span>
+              <i class="ri-add-line"></i>
+            </button>
+            <div class="faq-resposta">
+              <p>
+                Transfira a farinha para um recipiente hermético. Guarde em
+                local seco, fresco e protegido da luz solar direta. Evite a
+                geladeira sem vedação adequada, pois a umidade pode comprometer
+                a qualidade do produto. Consuma dentro do prazo de validade
+                indicado na embalagem.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-cat="compra">
+            <button class="faq-pergunta" aria-expanded="false">
+              <span>Onde posso comprar os produtos Famiglia Venturelli?</span>
+              <i class="ri-add-line"></i>
+            </button>
+            <div class="faq-resposta">
+              <p>
+                Nossos produtos estão disponíveis em supermercados e mercearias
+                em todo o Brasil, além das principais plataformas de e-commerce.
+                Acesse
+                <a href="/produtos-consumidor3.html">Como Comprar</a> para
+                encontrar um ponto de venda próximo ou comprar online.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-cat="compra">
+            <button class="faq-pergunta" aria-expanded="false">
+              <span>Não encontrei os produtos no e-commerce. O que fazer?</span>
+              <i class="ri-add-line"></i>
+            </button>
+            <div class="faq-resposta">
+              <p>
+                A disponibilidade pode variar conforme a plataforma e a região.
+                Busque por "Famiglia Venturelli" ou "Moinho Globo" nos
+                principais marketplaces. Em caso de dificuldades, use o
+                formulário acima e nossa equipe irá orientá-lo.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-cat="profissional">
+            <button class="faq-pergunta" aria-expanded="false">
+              <span
+                >Como faço para comprar como cliente profissional (CNPJ)?</span
+              >
+              <i class="ri-add-line"></i>
+            </button>
+            <div class="faq-resposta">
+              <p>
+                Clientes com CNPJ ativo compram pelo portal do cliente Moinho
+                Globo em
+                <a
+                  href="https://moinhoglobo.com.br"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >moinhoglobo.com.br</a
+                >. Faça o cadastro com seus dados empresariais, acesse o
+                catálogo e finalize seu pedido pelo computador ou smartphone.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-cat="profissional">
+            <button class="faq-pergunta" aria-expanded="false">
+              <span>Qual o pedido mínimo para compra profissional?</span>
+              <i class="ri-add-line"></i>
+            </button>
+            <div class="faq-resposta">
+              <p>
+                As condições variam conforme a região e o produto. Para
+                informações específicas, ligue para
+                <strong>(43) 3232.8000</strong> ou envie uma mensagem pelo
+                formulário desta página.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-cat="receitas">
+            <button class="faq-pergunta" aria-expanded="false">
+              <span>Como acesso o Livro de Receitas Famiglia Venturelli?</span>
+              <i class="ri-add-line"></i>
+            </button>
+            <div class="faq-resposta">
+              <p>
+                O Livro de Receitas é gratuito mediante cadastro. Acesse
+                <a
+                  href="https://materiais.moinhoglobo.com.br/formulario-materiais"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >o link no menu</a
+                >, preencha seus dados e receba o material diretamente no seu
+                e-mail.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-cat="receitas">
+            <button class="faq-pergunta" aria-expanded="false">
+              <span>O que é o programa Momentos Incomparáveis?</span>
+              <i class="ri-add-line"></i>
+            </button>
+            <div class="faq-resposta">
+              <p>
+                É o programa de relacionamento da Famiglia Venturelli, com
+                receitas exclusivas, dicas técnicas e novidades em primeira mão.
+                Cadastre-se em
+                <a
+                  href="https://materiais.moinhoglobo.com.br/inscricao-momentos-incomparaveis"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Momentos Incomparáveis</a
+                >.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════ NEWSLETTER ═══════════ -->
+      <section class="newsletter dark-red-bg flex-center">
+        <div
+          class="section-cadastro red-bg white-text center flex-center padding6"
+        >
+          <div class="text-box center alma-text-gap gap1">
+            <h2>Cadastre-se para receber conteúdos e novidades exclusivas</h2>
+            <img src="/svg/linha1.svg" alt="" class="linha-marca" />
+            <p>
+              Receba informações sobre lançamentos, receitas especiais, dicas
+              técnicas e conteúdos exclusivos da Famiglia Venturelli.
+            </p>
+            <form class="flex-center form-cadastro padding4 gap1">
+              <input type="text" placeholder="Nome" />
+              <input type="email" placeholder="E-mail" />
+              <input type="text" placeholder="Cidade" />
+              <label class="checkbox-label">
+                <input type="checkbox" />
+                <span>
+                  Concordo em receber comunicações da Famiglia Venturelli.
+                  <a href="#" class="link-politica">Política de Privacidade</a>
+                </span>
+              </label>
+              <button class="btn3" type="submit">
+                <a href="#">Me cadastrar</a
+                ><i class="ri-arrow-right-up-line"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ═══════════ FOOTER ═══════════ -->
+    <footer class="footer2 white-text flex-center">
+      <div class="container">
+        <img class="logo-footer" src="/svg/logo-footer-cor.svg" alt="" />
+        <div class="col1">
+          <h4><strong>Contato</strong></h4>
+          <p>(43) 3232.8000</p>
+          <p>Rua Senador Souza Naves, 1321</p>
+          <p>Sertanópolis | PR</p>
+        </div>
+        <div class="col2">
+          <h4><strong>Menu</strong></h4>
+          <a href="#">Início</a>
+          <a href="#">Produtos</a>
+          <a href="#">Receitas</a>
+          <a href="#">Momentos incomparáveis</a>
+          <a href="#">Contato</a>
+          <a href="#">Trabalhe Conosco</a>
+        </div>
+        <div class="col3">
+          <p>Todos os direitos reservados</p>
+          <div class="social-icons">
+            <a href=""><img src="/svg/facebook-icon.svg" alt="facebook" /></a>
+            <a href=""><img src="/svg/instagram-icon.svg" alt="instagram" /></a>
+            <a href=""><img src="/svg/youtube-icon.svg" alt="youtube" /></a>
+            <a href=""><img src="/svg/pinterest-icon.svg" alt="pinterest" /></a>
+            <a href=""><img src="/svg/tiktok-icon.svg" alt="tiktok" /></a>
+            <a href=""><img src="/svg/linkedin-icon.svg" alt="linkedin" /></a>
+          </div>
+          <button class="btn1">
+            <a href="#">Receba nossas receitas</a
+            ><i class="ri-arrow-right-up-line"></i>
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="gsap.js"></script>
+    <script src="gsap2.js"></script>
+    <script src="menu.js"></script>
+    <script src="carrossel.js"></script>
+    <script src="banner.js"></script>
+    <script>
+      // ── FAQ accordion ──
+      document.querySelectorAll(".faq-pergunta").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const item = btn.closest(".faq-item");
+          const isOpen = item.classList.contains("open");
+          // fechar todos
+          document.querySelectorAll(".faq-item.open").forEach((el) => {
+            el.classList.remove("open");
+            el.querySelector(".faq-pergunta").setAttribute(
+              "aria-expanded",
+              "false",
+            );
+          });
+          // abrir clicado (toggle)
+          if (!isOpen) {
+            item.classList.add("open");
+            btn.setAttribute("aria-expanded", "true");
+          }
+        });
+      });
+
+      // ── FAQ filtro de categorias ──
+      document.querySelectorAll(".faq-cat-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          document
+            .querySelectorAll(".faq-cat-btn")
+            .forEach((b) => b.classList.remove("active"));
+          btn.classList.add("active");
+          const filter = btn.dataset.filter;
+          document.querySelectorAll(".faq-item").forEach((item) => {
+            item.style.display =
+              filter === "all" || item.dataset.cat === filter ? "flex" : "none";
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

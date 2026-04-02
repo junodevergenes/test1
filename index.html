@@ -12,24 +12,75 @@
   </head>
   <body>
     <header>
-      <a href="/index.html"
-        ><img
-          class="logo"
-          src="/svg/logo-header-cor.svg"
-          alt="Famiglia Venturelli - Desde 1954"
-      /></a>
-      <img class="ham" src="/svg/menu-icon.svg" alt="Abrir menu" />
-      <nav class="red-bg padding3">
-        <a href="index.html">Início</a>
-        <a href="produtos-consumidor1.html">Produtos</a>
-        <a href="#">Receitas</a>
-        <a href="produtos-consumidor2.html">Embaixadores</a>
-        <a href="produtos-consumidor3.html">Momentos incomparáveis</a>
-        <a href="alma-italiana.html">Livro de receitas</a>
-        <a href="#">Contato</a>
-        <a href="#">Trabalhe conosco</a>
-      </nav>
-    </header>
+  <a href="/index.html">
+    <img
+      class="logo"
+      src="/svg/logo-header-cor.svg"
+      alt="Famiglia Venturelli - Desde 1954"
+    />
+  </a>
+ 
+  <button class="ham" aria-label="Abrir menu" aria-expanded="false">
+    <img src="/svg/menu-icon.svg" alt="" aria-hidden="true" />
+  </button>
+ 
+  <nav class="red-bg padding3" role="navigation" aria-label="Menu principal">
+ 
+    <a href="/index.html">Início</a>
+ 
+    <!-- ── Dropdown: Produtos ── -->
+    <div class="nav-dropdown" data-dropdown>
+      <button
+        class="nav-dropdown-toggle"
+        aria-haspopup="true"
+        aria-expanded="false"
+        aria-controls="dropdown-produtos"
+      >
+        Produtos
+        <i class="ri-arrow-down-s-line nav-dropdown-icon" aria-hidden="true"></i>
+      </button>
+      <ul
+        class="nav-dropdown-menu"
+        id="dropdown-produtos"
+        role="menu"
+      >
+        <li role="none">
+          <a href="/produtos-consumidor1.html" role="menuitem">Uso Diário</a>
+        </li>
+        <li role="none">
+          <a href="/produtos-consumidor2.html" role="menuitem">Uso Profissional</a>
+        </li>
+        <li role="none">
+          <a href="/alma-italiana.html" role="menuitem">Alma Italiana</a>
+        </li>
+        <li role="none">
+          <a href="/produtos-consumidor3.html" role="menuitem">Como Comprar</a>
+        </li>
+      </ul>
+    </div>
+ 
+    <a
+      href="https://materiais.moinhoglobo.com.br/inscricao-momentos-incomparaveis"
+      target="_blank"
+      rel="noopener noreferrer"
+    >Momentos Incomparáveis</a>
+ 
+    <a
+      href="https://materiais.moinhoglobo.com.br/formulario-materiais"
+      target="_blank"
+      rel="noopener noreferrer"
+    >Livro de Receitas</a>
+ 
+    <a href="/contato.html">Contato</a>
+ 
+    <a
+      href="https://moinhoglobo.com.br/sobre-nos/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >Trabalhe Conosco</a>
+ 
+  </nav>
+</header>
 
     <main>
      <section class="hero-parallax">
@@ -125,7 +176,7 @@
             allowfullscreen
           ></iframe>
           <button class="btn1">
-            <a href="">Ver mais vídeos</a><i class="ri-arrow-right-up-line"></i>
+            <a href="https://www.youtube.com/@famigliaventurelli">Ver mais vídeos</a><i class="ri-arrow-right-up-line"></i>
           </button>
         </div>
       </section>
@@ -167,7 +218,7 @@
             <p>Ao entrar para o Clube Famiglia Venturelli, você se conecta a uma comunidade apaixonada por culinária artesanal e ingredientes de alta qualidade.</p>
             <p><strong>Mais de 30 mil pessoas já fazem parte.</strong></p>
           <button class="btn1">
-            <a href="">Participar do Clube</a
+            <a href="https://materiais.moinhoglobo.com.br/inscricao-momentos-incomparaveis">Participar do Clube</a
             ><i class="ri-arrow-right-up-line"></i>
           </button>
         </div>
@@ -193,7 +244,7 @@
               >
             </p>
             <button class="btn1">
-              <a href="">Acessar Playlist</a
+              <a href="https://open.spotify.com/playlist/71HBJJd2K6zfzeLkt0ky8B?si=ad6d8905222046bf&nd=1">Acessar Playlist</a
               ><i class="ri-arrow-right-up-line"></i>
             </button>
           </div>

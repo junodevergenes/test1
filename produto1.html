@@ -9,430 +9,6 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-    <style>
-      /* ── Página de Produto ── */
-
-      .produto-hero {
-        background-color: var(--color01);
-        display: flex;
-        align-items: stretch;
-        min-height: 80vh;
-        position: relative;
-        overflow: hidden;
-      }
-
-      /* Coluna esquerda: imagem do produto */
-      .produto-hero__visual {
-        flex: 1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 3rem 2rem 0;
-        position: relative;
-      }
-
-      .produto-hero__visual img {
-        max-height: 520px;
-        width: auto;
-        object-fit: contain;
-        filter: drop-shadow(0 40px 60px rgba(0, 0, 0, 0.5));
-        position: relative;
-        z-index: 2;
-      }
-
-      /* Círculo decorativo atrás da embalagem */
-      .produto-hero__visual::before {
-        content: "";
-        position: absolute;
-        width: 420px;
-        height: 420px;
-        border-radius: 50%;
-        background: rgba(255, 255, 255, 0.04);
-        border: 1px solid rgba(255, 255, 255, 0.08);
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -45%);
-        z-index: 1;
-      }
-
-      /* Coluna direita: textos e CTAs */
-      .produto-hero__info {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 4rem 4rem 4rem 2rem;
-        gap: 1.5rem;
-      }
-
-      .produto-badge {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
-        background: rgba(255, 255, 255, 0.08);
-        border: 1px solid rgba(255, 255, 255, 0.15);
-        border-radius: 30px;
-        padding: 0.3rem 1rem;
-        font-size: 0.8rem;
-        color: var(--color08);
-        width: fit-content;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-      }
-
-      .produto-badge i {
-        font-size: 14px;
-        color: var(--color03);
-      }
-
-      .produto-hero__info h1 {
-        font-size: clamp(2rem, 8vw, 2rem);
-        line-height: 0.9;
-        color: var(--color07);
-      }
-
-      .produto-hero__info .subtitulo {
-        font: var(--h3);
-        color: rgba(255, 255, 255, 0.6);
-        margin-top: -0.5rem;
-      }
-
-      .produto-hero__info .descricao {
-        color: var(--color08);
-        font: var(--p);
-        max-width: 480px;
-        line-height: 1.7;
-        border-left: 2px solid var(--color03);
-        padding-left: 1rem;
-      }
-
-      .produto-tags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.75rem;
-      }
-
-      .produto-tag {
-        background: rgba(255, 255, 255, 0.07);
-        border: 1px solid rgba(255, 255, 255, 0.18);
-        border-radius: 6px;
-        padding: 0.4rem 1rem;
-        font-size: 0.85rem;
-        color: var(--color08);
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        white-space: nowrap;
-      }
-      .produto-tag i {
-        color: var(--color03);
-        font-size: 14px;
-      }
-
-      /* CTAs — seguem o padrão global de button */
-      .produto-ctas {
-        display: flex;
-        gap: 1rem;
-        flex-wrap: wrap;
-        padding-top: 0.5rem;
-      }
-
-      .btn-comprar {
-        all: unset;
-        display: inline-flex;
-        align-items: center;
-        gap: var(--spacing2);
-        background-color: var(--color03);
-        color: var(--color08);
-        font: var(--p);
-        padding: var(--spacing2) var(--spacing5);
-        border-radius: var(--spacing6);
-        cursor: pointer;
-        transition: 0.3s ease-in-out;
-        width: fit-content;
-      }
-      .btn-comprar:hover {
-        background: var(--color08);
-        color: var(--color04);
-      }
-      .btn-comprar i {
-        width: 24px;
-        margin-left: 16px;
-        color: inherit;
-      }
-
-      .btn-catalogo {
-        all: unset;
-        display: inline-flex;
-        align-items: center;
-        gap: var(--spacing2);
-        background-color: transparent;
-        border: 1px solid rgba(255, 255, 255, 0.25);
-        color: var(--color08);
-        font: var(--p);
-        padding: var(--spacing2) var(--spacing5);
-        border-radius: var(--spacing6);
-        cursor: pointer;
-        transition: 0.3s ease-in-out;
-        width: fit-content;
-      }
-      .btn-catalogo:hover {
-        border-color: var(--color08);
-        background: rgba(255, 255, 255, 0.06);
-      }
-      .btn-catalogo i {
-        width: 24px;
-        margin-left: 16px;
-        color: inherit;
-      }
-
-      /* ── Seção de detalhes + tabela nutricional ── */
-      .produto-detalhes {
-        display: flex;
-        gap: 4rem;
-        padding: 5rem 8%;
-        background: var(--color07);
-        align-items: flex-start;
-        flex-wrap: wrap;
-      }
-
-      /* Coluna de características */
-      .produto-caracteristicas {
-        flex: 1;
-        min-width: 280px;
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-      }
-
-      .produto-caracteristicas h2 {
-        font: var(--h2);
-        color: var(--color01);
-      }
-
-      .produto-caracteristicas p {
-        color: var(--color10);
-        line-height: 1.8;
-      }
-
-      .atributos-lista {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-      }
-
-      .atributo-item {
-        display: flex;
-        align-items: flex-start;
-        gap: 1rem;
-        padding: 1rem;
-        border-radius: 12px;
-        background: var(--color08);
-      }
-
-      .atributo-icone {
-        width: 40px;
-        height: 40px;
-        border-radius: 10px;
-        background: var(--color01);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-shrink: 0;
-      }
-      .atributo-icone i {
-        color: var(--color07);
-        font-size: 18px;
-      }
-
-      .atributo-texto strong {
-        display: block;
-        color: var(--color01);
-        font-size: 0.95rem;
-        margin-bottom: 0.2rem;
-      }
-      .atributo-texto span {
-        font-size: 0.85rem;
-        color: var(--color10);
-      }
-
-      /* ── Tabela Nutricional ── */
-      .tabela-nutricional {
-        flex: 0 0 360px;
-        min-width: 280px;
-      }
-
-      .tabela-nutricional h2 {
-        font: var(--h2);
-        color: var(--color01);
-        margin-bottom: 1.5rem;
-      }
-
-      .tabela-box {
-        border: 2px solid var(--color01);
-        border-radius: 12px;
-        overflow: hidden;
-        font: var(--p);
-      }
-
-      .tabela-header {
-        background: var(--color01);
-        color: var(--color07);
-        padding: 1rem 1.2rem;
-      }
-
-      .tabela-header p {
-        font-size: 0.75rem;
-        opacity: 0.7;
-        margin-top: 0.2rem;
-      }
-
-      .tabela-porcao {
-        background: rgba(11, 23, 74, 0.06);
-        padding: 0.7rem 1.2rem;
-        font-size: 0.85rem;
-        color: var(--color01);
-        border-bottom: 1px solid rgba(11, 23, 74, 0.15);
-        display: flex;
-        justify-content: space-between;
-      }
-
-      .tabela-row {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0.55rem 1.2rem;
-        border-bottom: 1px solid rgba(11, 23, 74, 0.08);
-        font-size: 0.9rem;
-        color: var(--color02);
-      }
-
-      .tabela-row:last-child {
-        border-bottom: none;
-      }
-
-      .tabela-row.destaque {
-        background: rgba(11, 23, 74, 0.04);
-        font-weight: bold;
-        color: var(--color01);
-      }
-
-      .tabela-row.sub {
-        padding-left: 2rem;
-        font-size: 0.82rem;
-        color: var(--color10);
-      }
-
-      .tabela-vd {
-        font-size: 0.75rem;
-        color: var(--color10);
-        text-align: right;
-        padding: 0.6rem 1.2rem;
-        border-top: 2px solid var(--color01);
-        background: rgba(11, 23, 74, 0.03);
-      }
-
-      /* ── Seção CTA final ── */
-      .produto-cta-final {
-        background-image:
-          linear-gradient(hsla(0, 0%, 0%, 0.8), hsla(0, 0%, 0%, 0.8)),
-          url(/img/consumidor-1.png);
-        background-size: cover;
-        background-position: 0% 80%;
-        padding: 5rem 8%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 2rem;
-        flex-wrap: wrap;
-      }
-
-      .produto-cta-final__texto h2 {
-        font: var(--h2);
-        color: var(--color07);
-        max-width: 500px;
-      }
-
-      .produto-cta-final__texto p {
-        color: rgba(255, 255, 255, 0.6);
-        margin-top: 0.5rem;
-        max-width: 440px;
-      }
-
-      .produto-cta-final__acoes {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        align-items: flex-start;
-      }
-
-      .disponivel-em {
-        font-size: 0.78rem;
-        color: rgba(255, 255, 255, 0.4);
-        text-transform: uppercase;
-        letter-spacing: 0.1em;
-      }
-
-      .lojas-lista {
-        display: flex;
-        gap: 0.8rem;
-        flex-wrap: wrap;
-      }
-
-      .loja-btn {
-        all: unset;
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
-        background: rgba(255, 255, 255, 0.08);
-        border: 1px solid rgba(255, 255, 255, 0.18);
-        color: var(--color08);
-        font-size: 0.85rem;
-        padding: 0.6rem 1.2rem;
-        border-radius: 8px;
-        cursor: pointer;
-        transition:
-          background 0.2s,
-          transform 0.15s;
-      }
-      .loja-btn:hover {
-        background: rgba(255, 255, 255, 0.15);
-        transform: translateY(-2px);
-      }
-      .loja-btn i {
-        font-size: 16px;
-        color: var(--color03);
-      }
-
-      /* Responsivo */
-      @media (max-width: 900px) {
-        .produto-hero {
-          flex-direction: column;
-          min-height: auto;
-        }
-        .produto-hero__visual {
-          padding: 3rem 2rem 0;
-          min-height: 280px;
-        }
-        .produto-hero__visual img {
-          max-height: 300px;
-        }
-        .produto-hero__info {
-          padding: 2rem;
-        }
-        .produto-detalhes {
-          padding: 3rem 5%;
-          gap: 2.5rem;
-        }
-        .tabela-nutricional {
-          flex: 1 1 100%;
-        }
-        .produto-cta-final {
-          flex-direction: column;
-          padding: 3rem 5%;
-        }
-      }
-    </style>
   </head>
   <body>
     <header>
@@ -443,16 +19,76 @@
           alt="Famiglia Venturelli - Desde 1954"
         />
       </a>
-      <img class="ham" src="/svg/menu-icon.svg" alt="Abrir menu" />
-      <nav class="red-bg padding3">
-        <a href="index.html">Início</a>
-        <a href="produtos-consumidor1.html">Produtos</a>
-        <a href="#">Receitas</a>
-        <a href="produtos-consumidor2.html">Embaixadores</a>
-        <a href="produtos-consumidor3.html">Momentos incomparáveis</a>
-        <a href="alma-italiana.html">Livro de receitas</a>
-        <a href="#">Contato</a>
-        <a href="#">Trabalhe conosco</a>
+
+      <button class="ham" aria-label="Abrir menu" aria-expanded="false">
+        <img src="/svg/menu-icon.svg" alt="" aria-hidden="true" />
+      </button>
+
+      <nav
+        class="red-bg padding3"
+        role="navigation"
+        aria-label="Menu principal"
+      >
+        <a href="/index.html">Início</a>
+
+        <!-- ── Dropdown: Produtos ── -->
+        <div class="nav-dropdown" data-dropdown>
+          <button
+            class="nav-dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            aria-controls="dropdown-produtos"
+          >
+            Produtos
+            <i
+              class="ri-arrow-down-s-line nav-dropdown-icon"
+              aria-hidden="true"
+            ></i>
+          </button>
+          <ul class="nav-dropdown-menu" id="dropdown-produtos" role="menu">
+            <li role="none">
+              <a href="/produtos-consumidor1.html" role="menuitem"
+                >Uso Diário</a
+              >
+            </li>
+            <li role="none">
+              <a href="/produtos-consumidor2.html" role="menuitem"
+                >Uso Profissional</a
+              >
+            </li>
+            <li role="none">
+              <a href="/alma-italiana.html" role="menuitem">Alma Italiana</a>
+            </li>
+            <li role="none">
+              <a href="/produtos-consumidor3.html" role="menuitem"
+                >Como Comprar</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <a
+          href="https://materiais.moinhoglobo.com.br/inscricao-momentos-incomparaveis"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Momentos Incomparáveis</a
+        >
+
+        <a
+          href="https://materiais.moinhoglobo.com.br/formulario-materiais"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Livro de Receitas</a
+        >
+
+        <a href="/contato.html">Contato</a>
+
+        <a
+          href="https://moinhoglobo.com.br/sobre-nos/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Trabalhe Conosco</a
+        >
       </nav>
     </header>
 
@@ -461,7 +97,7 @@
       <section class="produto-hero">
         <div class="produto-hero__visual">
           <img
-            src="/Produtos/FRENTE-PURÍSSIMA-1.png"
+            src="/Produtos/venturelli-purissima.png"
             alt="Farinha Puríssima Famiglia Venturelli"
           />
         </div>
@@ -473,18 +109,21 @@
           </span>
 
           <h1>Puríssima</h1>
-          <p class="subtitulo">Farinha de Trigo Especial Tipo 1</p>
+          <p class="subtitulo">Farinha de Trigo Venturelli</p>
 
           <p class="descricao">
-            Extraída da parte mais nobre do grão, a Puríssima entrega textura
-            impecável, fermentação equilibrada e sabor autêntico em cada
-            preparo. Feita para quem não aceita menos do que perfeito.
+            É um produto diferenciado (tipificado) por sua coloração com alto
+            grau de refinamento, retirada da parte mais nobre do grão do trigo,
+            o que lhe garante pureza e coloração “branquíssima” de alto padrão
+            de qualidade. É um produto sofisticado, enriquecido com Ferro e
+            Ácido Fólico e elaborado com primazia em processo de moagem especial
+            dos grãos de trigo, garantindo muito mais leveza e sabor. Destinado
+            para uso doméstico, chefs de cozinhas, preparo de produtos
+            especiais, pães e massas frescas (massa de pastel, macarrão,
+            lasanha, bolos, tortas, etc).
           </p>
 
           <div class="produto-tags">
-            <span class="produto-tag"
-              ><i class="ri-seedling-line"></i> Alta proteína</span
-            >
             <span class="produto-tag"
               ><i class="ri-fire-line"></i> Ideal para pães</span
             >
