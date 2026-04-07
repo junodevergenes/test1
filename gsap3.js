@@ -15,15 +15,3 @@ gsap.to("#trigo3", {
     scrub: 6,
   },
 });
-
-// Animação para a Farinha (Lado Direito - Seção Atributos)
-gsap.to("#farinha1", {
-  y: 50, // Um pouco mais rápido para dar profundidade
-  ease: "none",
-  scrollTrigger: {
-    trigger: "section[div='atributos']",
-    start: "top bottom",
-    end: "bottom top",
-    scrub: 6,
-  },
-});

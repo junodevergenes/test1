@@ -1102,6 +1102,9 @@ footer > .container > .col3 {
     width: 100%;
   }
 }
+#atributos {
+  margin-top: var(--spacing6);
+}
 #farinha1 {
   height: 650px;
   position: absolute;
@@ -1185,21 +1188,21 @@ footer > .container > .col3 {
   #farinha1 {
     height: 400px;
     right: 0;
-    bottom: 892px;
+    bottom: 841px;
   }
 }
 @media (max-width: 490px) {
   #farinha1 {
     height: 400px;
     right: 0;
-    bottom: 832px;
+    bottom: 886px;
   }
 }
 @media (max-width: 450px) {
   #farinha1 {
     height: 400px;
     right: 0;
-    bottom: 907px;
+    bottom: 925px;
   }
 }
 @media (max-width: 425px) {
@@ -1209,18 +1212,32 @@ footer > .container > .col3 {
     bottom: 978px;
   }
 }
+@media (max-width: 400px) {
+  #farinha1 {
+    height: 400px;
+    right: 0;
+    bottom: 1019px;
+  }
+}
 @media (max-width: 375px) {
   #farinha1 {
     height: 400px;
     right: 0;
-    bottom: 1092px;
+    bottom: 1019px;
+  }
+}
+@media (max-width: 360px) {
+  #farinha1 {
+    height: 400px;
+    right: 0;
+    bottom: 1080px;
   }
 }
 @media (max-width: 320px) {
   #farinha1 {
     height: 400px;
     right: 0;
-    bottom: 1154px;
+    bottom: 1128px;
   }
 }
 

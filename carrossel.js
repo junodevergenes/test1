@@ -284,4 +284,60 @@ document.getElementById("searchBtn").addEventListener("click", () => {
   window.open(BLOG_URL, "_blank");
 });
 
+// ── Drag / Swipe ──────────────────────────────────────────────────────────────
+(function initDrag() {
+  const track = document.getElementById("track");
+
+  let startX = 0;
+  let isDragging = false;
+  let didDrag = false; // flag: o gesto foi um drag real?
+  const THRESHOLD = 50; // px mínimos para contar como swipe
+
+  // ── Ponteiros unificados (mouse + touch) ─────────────────────────────────
+  function onStart(e) {
+    if (animating) return;
+    startX = e.touches ? e.touches[0].clientX : e.clientX;
+    isDragging = true;
+    didDrag = false;
+  }
+
+  function onMove(e) {
+    if (!isDragging) return;
+    const x = e.touches ? e.touches[0].clientX : e.clientX;
+    if (Math.abs(x - startX) > 8) {
+      // movimento real detectado
+      didDrag = true;
+      if (e.cancelable) e.preventDefault(); // evita scroll vertical acidental
+    }
+  }
+
+  function onEnd(e) {
+    if (!isDragging) return;
+    isDragging = false;
+
+    if (!didDrag) return; // foi um tap — deixa o click normal agir
+
+    const endX = e.changedTouches ? e.changedTouches[0].clientX : e.clientX;
+
+    const delta = endX - startX;
+
+    if (Math.abs(delta) < THRESHOLD) return; // gesto muito curto, ignora
+
+    // arrastar pra esquerda → avança (próximo card)
+    // arrastar pra direita  → volta  (card anterior)
+    navigate(delta < 0 ? 1 : -1);
+  }
+
+  // Touch
+  track.addEventListener("touchstart", onStart, { passive: true });
+  track.addEventListener("touchmove", onMove, { passive: false });
+  track.addEventListener("touchend", onEnd);
+
+  // Mouse (desktop)
+  track.addEventListener("mousedown", onStart);
+  track.addEventListener("mousemove", onMove);
+  track.addEventListener("mouseup", onEnd);
+  track.addEventListener("mouseleave", onEnd); // soltou fora do track
+})();
+
 initCarousel();
