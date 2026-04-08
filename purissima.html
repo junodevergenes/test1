@@ -25,7 +25,7 @@
       </button>
 
       <nav
-        class="red-bg padding3"
+        class="green-bg padding3"
         role="navigation"
         aria-label="Menu principal"
       >
@@ -137,14 +137,19 @@
           <div class="produto-ctas">
             <button
               class="btn-comprar"
-              onclick="window.open('#loja', '_blank')"
+              onclick="
+                window.open(
+                  'https://lojadotrigo.com.br/farinha-de-trigo/purrissima/farinha-de-trigo-purissima-1-kg',
+                  '_blank',
+                )
+              "
             >
               <i class="ri-shopping-cart-line"></i>
               Comprar agora
             </button>
             <button
               class="btn-catalogo"
-              onclick="window.location.href = 'produtos-consumidor1.html'"
+              onclick="window.location.href = '/uso-diario.html'"
             >
               <i class="ri-book-open-line"></i>
               Ver catálogo
@@ -344,22 +349,29 @@
         </div>
 
         <div class="produto-cta-final__acoes">
-          <button class="btn-comprar" onclick="window.open('#loja', '_blank')">
+          <button
+            class="btn-comprar"
+            onclick="
+              window.open(
+                'https://lojadotrigo.com.br/farinha-de-trigo/purrissima/farinha-de-trigo-purissima-1-kg',
+                '_blank',
+              )
+            "
+          >
             <i class="ri-shopping-cart-2-line"></i>
             Comprar agora
           </button>
-
-          <span class="disponivel-em">Também disponível em:</span>
-
           <div class="lojas-lista">
-            <button class="loja-btn" onclick="window.open('#', '_blank')">
-              <i class="ri-store-2-line"></i> Loja Online
-            </button>
-            <button class="loja-btn" onclick="window.open('#', '_blank')">
-              <i class="ri-map-pin-line"></i> Encontrar loja física
-            </button>
-            <button class="loja-btn" onclick="window.open('#', '_blank')">
-              <i class="ri-whatsapp-line"></i> Falar com revendedor
+            <button
+              class="btn-comprar"
+              onclick="
+                window.open(
+                  'https://portal.moinhoglobo.com.br/venturelli/',
+                  '_blank',
+                )
+              "
+            >
+              <i class="ri-map-pin-line"></i> Encontrar supermercado
             </button>
           </div>
         </div>

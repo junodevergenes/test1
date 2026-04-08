@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Puríssima — Famiglia Venturelli</title>
+    <title>Panko — Famiglia Venturelli</title>
     <link rel="stylesheet" href="/css/index.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
@@ -19,19 +19,15 @@
           alt="Famiglia Venturelli - Desde 1954"
         />
       </a>
-
       <button class="ham" aria-label="Abrir menu" aria-expanded="false">
         <img src="/svg/menu-icon.svg" alt="" aria-hidden="true" />
       </button>
-
       <nav
-        class="red-bg padding3"
+        class="green-bg padding3"
         role="navigation"
         aria-label="Menu principal"
       >
         <a href="/index.html">Início</a>
-
-        <!-- ── Dropdown: Produtos ── -->
         <div class="nav-dropdown" data-dropdown>
           <button
             class="nav-dropdown-toggle"
@@ -47,10 +43,12 @@
           </button>
           <ul class="nav-dropdown-menu" id="dropdown-produtos" role="menu">
             <li role="none">
-              <a href="/uso-diario.html" role="menuitem">Uso Diário</a>
+              <a href="/produtos-consumidor1.html" role="menuitem"
+                >Uso Diário</a
+              >
             </li>
             <li role="none">
-              <a href="/uso-profissional.html" role="menuitem"
+              <a href="/produtos-consumidor2.html" role="menuitem"
                 >Uso Profissional</a
               >
             </li>
@@ -58,27 +56,25 @@
               <a href="/alma-italiana.html" role="menuitem">Alma Italiana</a>
             </li>
             <li role="none">
-              <a href="/como-comprar.html" role="menuitem">Como Comprar</a>
+              <a href="/produtos-consumidor3.html" role="menuitem"
+                >Como Comprar</a
+              >
             </li>
           </ul>
         </div>
-
         <a
           href="https://materiais.moinhoglobo.com.br/inscricao-momentos-incomparaveis"
           target="_blank"
           rel="noopener noreferrer"
           >Momentos Incomparáveis</a
         >
-
         <a
           href="https://materiais.moinhoglobo.com.br/formulario-materiais"
           target="_blank"
           rel="noopener noreferrer"
           >Livro de Receitas</a
         >
-
         <a href="/contato.html">Contato</a>
-
         <a
           href="https://moinhoglobo.com.br/sobre-nos/"
           target="_blank"
@@ -89,62 +85,58 @@
     </header>
 
     <main>
-      <!-- ── HERO DO PRODUTO ── -->
       <section class="produto-hero">
         <div class="produto-hero__visual">
           <img
-            src="/Produtos/venturelli-purissima.png"
-            alt="Farinha Puríssima Famiglia Venturelli"
+            src="/Produtos/venturelli-panko.png"
+            alt="Panko Famiglia Venturelli"
           />
         </div>
-
         <div class="produto-hero__info">
           <span class="produto-badge">
             <i class="ri-award-line"></i>
-            Farinha Artesanal Premium
+            Farinha de Rosca Japonesa
           </span>
-
-          <h1>Puríssima</h1>
-          <p class="subtitulo">Farinha de Trigo Venturelli</p>
-
+          <h1>Panko</h1>
+          <p class="subtitulo">Farinha de Pão Venturelli</p>
           <p class="descricao">
-            É um produto diferenciado (tipificado) por sua coloração com alto
-            grau de refinamento, retirada da parte mais nobre do grão do trigo,
-            o que lhe garante pureza e coloração “branquíssima” de alto padrão
-            de qualidade. É um produto sofisticado, enriquecido com Ferro e
-            Ácido Fólico e elaborado com primazia em processo de moagem especial
-            dos grãos de trigo, garantindo muito mais leveza e sabor. Destinado
-            para uso doméstico, chefs de cozinhas, preparo de produtos
-            especiais, pães e massas frescas (massa de pastel, macarrão,
-            lasanha, bolos, tortas, etc).
+            O Panko Venturelli é uma farinha de pão de granulometria grossa, de
+            origem japonesa, que proporciona empanamento com textura mais
+            crocante, leve e aerada do que o farelo convencional. Ideal para
+            frango à milanesa, camarão empanado, croquetes, vegetais fritos e
+            qualquer receita que exija aquela crocância especial que não murcha
+            mesmo após o reaquecimento.
           </p>
-
           <div class="produto-tags">
             <span class="produto-tag"
-              ><i class="ri-fire-line"></i> Ideal para pães</span
+              ><i class="ri-fire-line"></i> Empanados crocantes</span
             >
             <span class="produto-tag"
-              ><i class="ri-restaurant-line"></i> Massas frescas</span
+              ><i class="ri-restaurant-line"></i> Textura superior</span
             >
             <span class="produto-tag"
-              ><i class="ri-cake-line"></i> Confeitaria</span
+              ><i class="ri-thumb-up-line"></i> Absorção mínima de óleo</span
             >
             <span class="produto-tag"
-              ><i class="ri-leaf-line"></i> Sem aditivos</span
+              ><i class="ri-global-line"></i> Origem japonesa</span
             >
           </div>
-
           <div class="produto-ctas">
             <button
               class="btn-comprar"
-              onclick="window.open('#loja', '_blank')"
+              onclick="
+                window.open(
+                  'https://lojadotrigo.com.br/especiais/panko/farinha-para-empanar-panko-200g',
+                  '_blank',
+                )
+              "
             >
               <i class="ri-shopping-cart-line"></i>
               Comprar agora
             </button>
             <button
               class="btn-catalogo"
-              onclick="window.location.href = 'produtos-consumidor1.html'"
+              onclick="window.location.href = '/uso-diario.html'"
             >
               <i class="ri-book-open-line"></i>
               Ver catálogo
@@ -153,11 +145,10 @@
         </div>
       </section>
 
-      <!-- ── DETALHES + TABELA NUTRICIONAL ── -->
       <section class="produto-detalhes">
         <div class="produto-caracteristicas">
           <div>
-            <h2>Por que a Puríssima?</h2>
+            <h2>Por que o Panko?</h2>
             <img
               src="/svg/linha1.svg"
               alt=""
@@ -165,63 +156,57 @@
               style="margin: 0.5rem 0 1rem"
             />
             <p>
-              A Puríssima é produzida com o trigo mais seleto, processado com
-              tecnologia de moagem a frio para preservar todos os nutrientes e
-              garantir uma farinha de cor branca natural, sem alvejantes. O
-              resultado é uma farinha de desempenho superior, consistente e
-              confiável para qualquer aplicação culinária.
+              O Panko Venturelli é produzido a partir de pão branco sem casca,
+              desidratado e moído em flocos irregulares e porosos. Essa
+              estrutura única cria uma camada de empanamento mais crocante, que
+              absorve menos gordura durante a fritura e mantém a textura
+              crocante por mais tempo, mesmo após o reaquecimento no forno ou
+              air fryer.
             </p>
           </div>
-
           <div class="atributos-lista">
             <div class="atributo-item">
               <div class="atributo-icone">
                 <i class="ri-contrast-drop-line"></i>
               </div>
               <div class="atributo-texto">
-                <strong>Cor branca natural</strong>
+                <strong>Flocos porosos e irregulares</strong>
                 <span
-                  >Sem alvejantes ou aditivos químicos no processo de
-                  branqueamento.</span
+                  >Estrutura única que cria empanamento mais aerado e
+                  crocante.</span
                 >
               </div>
             </div>
             <div class="atributo-item">
-              <div class="atributo-icone">
-                <i class="ri-bubble-chart-line"></i>
-              </div>
+              <div class="atributo-icone"><i class="ri-time-line"></i></div>
               <div class="atributo-texto">
-                <strong>Glúten forte e elástico</strong>
+                <strong>Crocância duradoura</strong>
                 <span
-                  >Rede de glúten estável para massas que crescem com
-                  uniformidade.</span
+                  >Mantém textura mesmo após reaquecimento em forno ou air
+                  fryer.</span
                 >
               </div>
             </div>
             <div class="atributo-item">
               <div class="atributo-icone"><i class="ri-scales-line"></i></div>
               <div class="atributo-texto">
-                <strong>Absorção de água controlada</strong>
+                <strong>Menor absorção de óleo</strong>
                 <span
-                  >Facilita o manuseio e garante consistência no resultado
-                  final.</span
+                  >Empanados mais leves e saudáveis sem abrir mão do
+                  sabor.</span
                 >
               </div>
             </div>
             <div class="atributo-item">
               <div class="atributo-icone"><i class="ri-box-3-line"></i></div>
               <div class="atributo-texto">
-                <strong>Disponível em 1 kg e 5 kg</strong>
-                <span
-                  >Para o uso doméstico e para quem produz em maior
-                  volume.</span
-                >
+                <strong>Disponível em 400 g</strong>
+                <span>Embalagem prática para uso doméstico cotidiano.</span>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- TABELA NUTRICIONAL -->
         <div class="tabela-nutricional">
           <h2>Informação Nutricional</h2>
           <img
@@ -230,57 +215,50 @@
             class="linha-marca"
             style="margin: 0.5rem 0 1.5rem"
           />
-
           <div class="tabela-box">
             <div class="tabela-header">
               <strong>Informação Nutricional</strong>
-              <p>Farinha de Trigo Especial Tipo 1 — Puríssima</p>
+              <p>Farinha de Pão Panko — Venturelli</p>
             </div>
-
             <div class="tabela-porcao">
-              <span>Porção de <strong>50 g</strong></span>
+              <span>Porção de <strong>30 g</strong></span>
               <span>(%VD*)</span>
             </div>
-
             <div class="tabela-row destaque">
               <span>Valor Energético</span>
               <span
-                >173 kcal / 724 kJ &nbsp;
-                <em style="font-weight: normal; font-size: 0.8rem"
-                  >10%</em
-                ></span
+                >112 kcal / 469 kJ &nbsp;
+                <em style="font-weight: normal; font-size: 0.8rem">6%</em></span
               >
             </div>
             <div class="tabela-row destaque">
               <span>Carboidratos</span>
               <span
-                >36,5 g &nbsp;
-                <em style="font-weight: normal; font-size: 0.8rem"
-                  >14%</em
-                ></span
+                >22,0 g &nbsp;
+                <em style="font-weight: normal; font-size: 0.8rem">8%</em></span
               >
             </div>
             <div class="tabela-row sub">
               <span>— dos quais Açúcares</span>
-              <span>0,5 g &nbsp; <em>1%</em></span>
+              <span>1,5 g &nbsp; <em>3%</em></span>
             </div>
             <div class="tabela-row destaque">
               <span>Proteínas</span>
               <span
-                >5,5 g &nbsp;
-                <em style="font-weight: normal; font-size: 0.8rem">7%</em></span
+                >3,5 g &nbsp;
+                <em style="font-weight: normal; font-size: 0.8rem">5%</em></span
               >
             </div>
             <div class="tabela-row destaque">
               <span>Gorduras Totais</span>
               <span
-                >0,6 g &nbsp;
-                <em style="font-weight: normal; font-size: 0.8rem">1%</em></span
+                >1,0 g &nbsp;
+                <em style="font-weight: normal; font-size: 0.8rem">2%</em></span
               >
             </div>
             <div class="tabela-row sub">
               <span>— Gorduras Saturadas</span>
-              <span>0,1 g &nbsp; <em>1%</em></span>
+              <span>0,2 g &nbsp; <em>1%</em></span>
             </div>
             <div class="tabela-row sub">
               <span>— Gorduras Trans</span>
@@ -289,34 +267,30 @@
             <div class="tabela-row destaque">
               <span>Fibra Alimentar</span>
               <span
-                >1,2 g &nbsp;
-                <em style="font-weight: normal; font-size: 0.8rem">5%</em></span
+                >0,9 g &nbsp;
+                <em style="font-weight: normal; font-size: 0.8rem">4%</em></span
               >
             </div>
             <div class="tabela-row destaque">
               <span>Sódio</span>
               <span
-                >1 mg &nbsp;
-                <em style="font-weight: normal; font-size: 0.8rem"
-                  >&lt;1%</em
-                ></span
+                >180 mg &nbsp;
+                <em style="font-weight: normal; font-size: 0.8rem">8%</em></span
               >
             </div>
             <div class="tabela-row">
               <span>Ferro</span>
-              <span>2,1 mg &nbsp; <em>15%</em></span>
+              <span>1,0 mg &nbsp; <em>7%</em></span>
             </div>
             <div class="tabela-row">
               <span>Ácido Fólico</span>
-              <span>60 mcg &nbsp; <em>15%</em></span>
+              <span>30 mcg &nbsp; <em>8%</em></span>
             </div>
-
             <div class="tabela-vd">
               * % Valores Diários com base em uma dieta de 2.000 kcal.<br />
               ** Valor diário não estabelecido.
             </div>
           </div>
-
           <p
             style="
               font-size: 0.75rem;
@@ -326,45 +300,51 @@
             "
           >
             <strong>Ingredientes:</strong> Farinha de trigo enriquecida com
-            ferro e ácido fólico.<br />
+            ferro e ácido fólico, açúcar, sal e fermento biológico.<br />
             <strong>Contém glúten.</strong> Pode conter traços de soja, leite e
             ovos.
           </p>
         </div>
       </section>
 
-      <!-- ── CTA FINAL ── -->
       <section class="produto-cta-final">
         <div class="produto-cta-final__texto">
-          <h2>Leve a Puríssima para a sua cozinha</h2>
+          <h2>Leve o Panko para a sua cozinha</h2>
           <p>
-            Disponível em embalagens de 1 kg e 5 kg. Encontre nas principais
-            redes e lojas online.
+            Disponível em embalagens de 200 g. Encontre nas principais redes e
+            lojas online.
           </p>
         </div>
-
         <div class="produto-cta-final__acoes">
-          <button class="btn-comprar" onclick="window.open('#loja', '_blank')">
+          <button
+            class="btn-comprar"
+            onclick="
+              window.open(
+                'https://lojadotrigo.com.br/especiais/panko/farinha-para-empanar-panko-200g',
+                '_blank',
+              )
+            "
+          >
             <i class="ri-shopping-cart-2-line"></i>
             Comprar agora
           </button>
-
-          <span class="disponivel-em">Também disponível em:</span>
-
           <div class="lojas-lista">
-            <button class="loja-btn" onclick="window.open('#', '_blank')">
-              <i class="ri-store-2-line"></i> Loja Online
-            </button>
-            <button class="loja-btn" onclick="window.open('#', '_blank')">
-              <i class="ri-map-pin-line"></i> Encontrar loja física
-            </button>
-            <button class="loja-btn" onclick="window.open('#', '_blank')">
-              <i class="ri-whatsapp-line"></i> Falar com revendedor
+            <button
+              class="btn-comprar"
+              onclick="
+                window.open(
+                  'https://portal.moinhoglobo.com.br/venturelli/',
+                  '_blank',
+                )
+              "
+            >
+              <i class="ri-map-pin-line"></i> Encontrar supermercado
             </button>
           </div>
         </div>
       </section>
     </main>
+
     <footer class="footer1 blue-bg white-text flex-center">
       <div class="container">
         <img
@@ -469,9 +449,7 @@
     <script src="gsap.js"></script>
     <script src="menu.js"></script>
     <script>
-      // Animações de entrada
       gsap.registerPlugin(ScrollTrigger);
-
       gsap.from(".produto-hero__visual img", {
         y: 40,
         opacity: 0,
@@ -487,7 +465,6 @@
         stagger: 0.12,
         delay: 0.4,
       });
-
       gsap.from(".atributo-item", {
         scrollTrigger: { trigger: ".atributos-lista", start: "top 80%" },
         x: -30,
@@ -496,7 +473,6 @@
         ease: "power2.out",
         stagger: 0.1,
       });
-
       gsap.from(".tabela-box", {
         scrollTrigger: { trigger: ".tabela-nutricional", start: "top 80%" },
         y: 30,
@@ -504,7 +480,6 @@
         duration: 0.8,
         ease: "power2.out",
       });
-
       gsap.from(".produto-cta-final__texto, .produto-cta-final__acoes", {
         scrollTrigger: { trigger: ".produto-cta-final", start: "top 80%" },
         y: 20,

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Puríssima — Famiglia Venturelli</title>
+    <title>Forneria — Famiglia Venturelli</title>
     <link rel="stylesheet" href="/css/index.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
@@ -11,7 +11,7 @@
     />
   </head>
   <body>
-    <header>
+    <header class="black-bg">
       <a href="/index.html">
         <img
           class="logo"
@@ -25,7 +25,7 @@
       </button>
 
       <nav
-        class="red-bg padding3"
+        class="grey-bg padding3"
         role="navigation"
         aria-label="Menu principal"
       >
@@ -89,62 +89,58 @@
     </header>
 
     <main>
-      <!-- ── HERO DO PRODUTO ── -->
-      <section class="produto-hero">
+      <section class="produto-hero-pro">
         <div class="produto-hero__visual">
           <img
-            src="/Produtos/venturelli-purissima.png"
-            alt="Farinha Puríssima Famiglia Venturelli"
+            src="/Produtos/FRENTE-FORNERIA-1.png"
+            alt="Farinha Forneria Famiglia Venturelli"
           />
         </div>
-
         <div class="produto-hero__info">
           <span class="produto-badge">
             <i class="ri-award-line"></i>
-            Farinha Artesanal Premium
+            Farinha Profissional Premium
           </span>
-
-          <h1>Puríssima</h1>
+          <h1>Forneria</h1>
           <p class="subtitulo">Farinha de Trigo Venturelli</p>
-
           <p class="descricao">
-            É um produto diferenciado (tipificado) por sua coloração com alto
-            grau de refinamento, retirada da parte mais nobre do grão do trigo,
-            o que lhe garante pureza e coloração “branquíssima” de alto padrão
-            de qualidade. É um produto sofisticado, enriquecido com Ferro e
-            Ácido Fólico e elaborado com primazia em processo de moagem especial
-            dos grãos de trigo, garantindo muito mais leveza e sabor. Destinado
-            para uso doméstico, chefs de cozinhas, preparo de produtos
-            especiais, pães e massas frescas (massa de pastel, macarrão,
-            lasanha, bolos, tortas, etc).
+            A Forneria foi desenvolvida para panificadores e pizzaiolos
+            profissionais que exigem desempenho consistente em grande escala.
+            Com alto teor proteico, força W elevada e capacidade de hidratação
+            superior, é a farinha ideal para pães artesanais, baguetes,
+            ciabattas, focaccias e pizzas de alta fermentação com estrutura de
+            miolo aberta e casca crocante.
           </p>
-
           <div class="produto-tags">
             <span class="produto-tag"
-              ><i class="ri-fire-line"></i> Ideal para pães</span
+              ><i class="ri-fire-line"></i> Panificação profissional</span
             >
             <span class="produto-tag"
-              ><i class="ri-restaurant-line"></i> Massas frescas</span
+              ><i class="ri-restaurant-line"></i> Alta fermentação</span
             >
             <span class="produto-tag"
-              ><i class="ri-cake-line"></i> Confeitaria</span
+              ><i class="ri-bubble-chart-line"></i> Força W elevada</span
             >
             <span class="produto-tag"
-              ><i class="ri-leaf-line"></i> Sem aditivos</span
+              ><i class="ri-building-line"></i> Uso profissional</span
             >
           </div>
-
           <div class="produto-ctas">
             <button
               class="btn-comprar"
-              onclick="window.open('#loja', '_blank')"
+              onclick="
+                window.open(
+                  'https://portal.moinhoglobo.com.br/cadastro',
+                  '_blank',
+                )
+              "
             >
               <i class="ri-shopping-cart-line"></i>
-              Comprar agora
+              Solicitar pedido
             </button>
             <button
               class="btn-catalogo"
-              onclick="window.location.href = 'produtos-consumidor1.html'"
+              onclick="window.location.href = '/uso-profissional.html'"
             >
               <i class="ri-book-open-line"></i>
               Ver catálogo
@@ -153,11 +149,10 @@
         </div>
       </section>
 
-      <!-- ── DETALHES + TABELA NUTRICIONAL ── -->
       <section class="produto-detalhes">
         <div class="produto-caracteristicas">
           <div>
-            <h2>Por que a Puríssima?</h2>
+            <h2>Por que a Forneria?</h2>
             <img
               src="/svg/linha1.svg"
               alt=""
@@ -165,55 +160,51 @@
               style="margin: 0.5rem 0 1rem"
             />
             <p>
-              A Puríssima é produzida com o trigo mais seleto, processado com
-              tecnologia de moagem a frio para preservar todos os nutrientes e
-              garantir uma farinha de cor branca natural, sem alvejantes. O
-              resultado é uma farinha de desempenho superior, consistente e
-              confiável para qualquer aplicação culinária.
+              A Forneria combina força reológica, estabilidade ao longo de
+              processos longos de fermentação e excelente tolerância à
+              mecanização. O resultado são pães com casca dourada e crocante,
+              miolo alvéolado e sabor intenso, com desempenho constante em
+              fornos a lenha, deck ou combinados.
             </p>
           </div>
-
           <div class="atributos-lista">
-            <div class="atributo-item">
-              <div class="atributo-icone">
-                <i class="ri-contrast-drop-line"></i>
-              </div>
-              <div class="atributo-texto">
-                <strong>Cor branca natural</strong>
-                <span
-                  >Sem alvejantes ou aditivos químicos no processo de
-                  branqueamento.</span
-                >
-              </div>
-            </div>
             <div class="atributo-item">
               <div class="atributo-icone">
                 <i class="ri-bubble-chart-line"></i>
               </div>
               <div class="atributo-texto">
-                <strong>Glúten forte e elástico</strong>
+                <strong>Força W elevada</strong>
                 <span
-                  >Rede de glúten estável para massas que crescem com
-                  uniformidade.</span
+                  >Suporta fermentação longa de até 72h sem perda de
+                  estrutura.</span
                 >
               </div>
             </div>
             <div class="atributo-item">
               <div class="atributo-icone"><i class="ri-scales-line"></i></div>
               <div class="atributo-texto">
-                <strong>Absorção de água controlada</strong>
+                <strong>Alta absorção de água</strong>
                 <span
-                  >Facilita o manuseio e garante consistência no resultado
-                  final.</span
+                  >Hidratação superior para massas mais leves e macias.</span
+                >
+              </div>
+            </div>
+            <div class="atributo-item">
+              <div class="atributo-icone"><i class="ri-fire-line"></i></div>
+              <div class="atributo-texto">
+                <strong>Casca crocante garantida</strong>
+                <span
+                  >Caramelização perfeita em fornos profissionais a lenha ou
+                  elétrico.</span
                 >
               </div>
             </div>
             <div class="atributo-item">
               <div class="atributo-icone"><i class="ri-box-3-line"></i></div>
               <div class="atributo-texto">
-                <strong>Disponível em 1 kg e 5 kg</strong>
+                <strong>Disponível em 25 kg</strong>
                 <span
-                  >Para o uso doméstico e para quem produz em maior
+                  >Saco industrial para padarias e pizzarias de alto
                   volume.</span
                 >
               </div>
@@ -221,7 +212,6 @@
           </div>
         </div>
 
-        <!-- TABELA NUTRICIONAL -->
         <div class="tabela-nutricional">
           <h2>Informação Nutricional</h2>
           <img
@@ -230,18 +220,15 @@
             class="linha-marca"
             style="margin: 0.5rem 0 1.5rem"
           />
-
           <div class="tabela-box">
             <div class="tabela-header">
               <strong>Informação Nutricional</strong>
-              <p>Farinha de Trigo Especial Tipo 1 — Puríssima</p>
+              <p>Farinha de Trigo Especial Tipo 1 — Forneria</p>
             </div>
-
             <div class="tabela-porcao">
               <span>Porção de <strong>50 g</strong></span>
               <span>(%VD*)</span>
             </div>
-
             <div class="tabela-row destaque">
               <span>Valor Energético</span>
               <span
@@ -254,9 +241,9 @@
             <div class="tabela-row destaque">
               <span>Carboidratos</span>
               <span
-                >36,5 g &nbsp;
+                >35,5 g &nbsp;
                 <em style="font-weight: normal; font-size: 0.8rem"
-                  >14%</em
+                  >13%</em
                 ></span
               >
             </div>
@@ -267,14 +254,14 @@
             <div class="tabela-row destaque">
               <span>Proteínas</span>
               <span
-                >5,5 g &nbsp;
-                <em style="font-weight: normal; font-size: 0.8rem">7%</em></span
+                >6,5 g &nbsp;
+                <em style="font-weight: normal; font-size: 0.8rem">9%</em></span
               >
             </div>
             <div class="tabela-row destaque">
               <span>Gorduras Totais</span>
               <span
-                >0,6 g &nbsp;
+                >0,7 g &nbsp;
                 <em style="font-weight: normal; font-size: 0.8rem">1%</em></span
               >
             </div>
@@ -289,7 +276,7 @@
             <div class="tabela-row destaque">
               <span>Fibra Alimentar</span>
               <span
-                >1,2 g &nbsp;
+                >1,3 g &nbsp;
                 <em style="font-weight: normal; font-size: 0.8rem">5%</em></span
               >
             </div>
@@ -310,13 +297,11 @@
               <span>Ácido Fólico</span>
               <span>60 mcg &nbsp; <em>15%</em></span>
             </div>
-
             <div class="tabela-vd">
               * % Valores Diários com base em uma dieta de 2.000 kcal.<br />
               ** Valor diário não estabelecido.
             </div>
           </div>
-
           <p
             style="
               font-size: 0.75rem;
@@ -333,34 +318,19 @@
         </div>
       </section>
 
-      <!-- ── CTA FINAL ── -->
       <section class="produto-cta-final">
         <div class="produto-cta-final__texto">
-          <h2>Leve a Puríssima para a sua cozinha</h2>
+          <h2>Leve a Forneria para o seu negócio</h2>
           <p>
-            Disponível em embalagens de 1 kg e 5 kg. Encontre nas principais
-            redes e lojas online.
+            Disponível em sacos de 25 kg. Entre em contato com um representante
+            Venturelli.
           </p>
         </div>
-
         <div class="produto-cta-final__acoes">
-          <button class="btn-comprar" onclick="window.open('#loja', '_blank')">
+          <button class="btn-comprar" onclick="window.open('https://portal.moinhoglobo.com.br/cadastro', '_blank')">
             <i class="ri-shopping-cart-2-line"></i>
-            Comprar agora
+            Solicitar pedido
           </button>
-
-          <span class="disponivel-em">Também disponível em:</span>
-
-          <div class="lojas-lista">
-            <button class="loja-btn" onclick="window.open('#', '_blank')">
-              <i class="ri-store-2-line"></i> Loja Online
-            </button>
-            <button class="loja-btn" onclick="window.open('#', '_blank')">
-              <i class="ri-map-pin-line"></i> Encontrar loja física
-            </button>
-            <button class="loja-btn" onclick="window.open('#', '_blank')">
-              <i class="ri-whatsapp-line"></i> Falar com revendedor
-            </button>
           </div>
         </div>
       </section>
@@ -469,9 +439,7 @@
     <script src="gsap.js"></script>
     <script src="menu.js"></script>
     <script>
-      // Animações de entrada
       gsap.registerPlugin(ScrollTrigger);
-
       gsap.from(".produto-hero__visual img", {
         y: 40,
         opacity: 0,
@@ -487,7 +455,6 @@
         stagger: 0.12,
         delay: 0.4,
       });
-
       gsap.from(".atributo-item", {
         scrollTrigger: { trigger: ".atributos-lista", start: "top 80%" },
         x: -30,
@@ -496,7 +463,6 @@
         ease: "power2.out",
         stagger: 0.1,
       });
-
       gsap.from(".tabela-box", {
         scrollTrigger: { trigger: ".tabela-nutricional", start: "top 80%" },
         y: 30,
@@ -504,7 +470,6 @@
         duration: 0.8,
         ease: "power2.out",
       });
-
       gsap.from(".produto-cta-final__texto, .produto-cta-final__acoes", {
         scrollTrigger: { trigger: ".produto-cta-final", start: "top 80%" },
         y: 20,

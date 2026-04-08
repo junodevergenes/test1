@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Puríssima — Famiglia Venturelli</title>
+    <title>Esp. Pastel — Famiglia Venturelli</title>
     <link rel="stylesheet" href="/css/index.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
@@ -19,19 +19,15 @@
           alt="Famiglia Venturelli - Desde 1954"
         />
       </a>
-
       <button class="ham" aria-label="Abrir menu" aria-expanded="false">
         <img src="/svg/menu-icon.svg" alt="" aria-hidden="true" />
       </button>
-
       <nav
-        class="red-bg padding3"
+        class="green-bg padding3"
         role="navigation"
         aria-label="Menu principal"
       >
         <a href="/index.html">Início</a>
-
-        <!-- ── Dropdown: Produtos ── -->
         <div class="nav-dropdown" data-dropdown>
           <button
             class="nav-dropdown-toggle"
@@ -47,10 +43,12 @@
           </button>
           <ul class="nav-dropdown-menu" id="dropdown-produtos" role="menu">
             <li role="none">
-              <a href="/uso-diario.html" role="menuitem">Uso Diário</a>
+              <a href="/produtos-consumidor1.html" role="menuitem"
+                >Uso Diário</a
+              >
             </li>
             <li role="none">
-              <a href="/uso-profissional.html" role="menuitem"
+              <a href="/produtos-consumidor2.html" role="menuitem"
                 >Uso Profissional</a
               >
             </li>
@@ -58,27 +56,25 @@
               <a href="/alma-italiana.html" role="menuitem">Alma Italiana</a>
             </li>
             <li role="none">
-              <a href="/como-comprar.html" role="menuitem">Como Comprar</a>
+              <a href="/produtos-consumidor3.html" role="menuitem"
+                >Como Comprar</a
+              >
             </li>
           </ul>
         </div>
-
         <a
           href="https://materiais.moinhoglobo.com.br/inscricao-momentos-incomparaveis"
           target="_blank"
           rel="noopener noreferrer"
           >Momentos Incomparáveis</a
         >
-
         <a
           href="https://materiais.moinhoglobo.com.br/formulario-materiais"
           target="_blank"
           rel="noopener noreferrer"
           >Livro de Receitas</a
         >
-
         <a href="/contato.html">Contato</a>
-
         <a
           href="https://moinhoglobo.com.br/sobre-nos/"
           target="_blank"
@@ -89,55 +85,51 @@
     </header>
 
     <main>
-      <!-- ── HERO DO PRODUTO ── -->
       <section class="produto-hero">
         <div class="produto-hero__visual">
           <img
-            src="/Produtos/venturelli-purissima.png"
-            alt="Farinha Puríssima Famiglia Venturelli"
+            src="/Produtos/venturelli-esp-pastel.png"
+            alt="Farinha Especial Pastel Famiglia Venturelli"
           />
         </div>
-
         <div class="produto-hero__info">
           <span class="produto-badge">
             <i class="ri-award-line"></i>
-            Farinha Artesanal Premium
+            Farinha Especial para Pastel
           </span>
-
-          <h1>Puríssima</h1>
+          <h1>Esp. Pastel</h1>
           <p class="subtitulo">Farinha de Trigo Venturelli</p>
-
           <p class="descricao">
-            É um produto diferenciado (tipificado) por sua coloração com alto
-            grau de refinamento, retirada da parte mais nobre do grão do trigo,
-            o que lhe garante pureza e coloração “branquíssima” de alto padrão
-            de qualidade. É um produto sofisticado, enriquecido com Ferro e
-            Ácido Fólico e elaborado com primazia em processo de moagem especial
-            dos grãos de trigo, garantindo muito mais leveza e sabor. Destinado
-            para uso doméstico, chefs de cozinhas, preparo de produtos
-            especiais, pães e massas frescas (massa de pastel, macarrão,
-            lasanha, bolos, tortas, etc).
+            A Farinha Especial Pastel Venturelli foi desenvolvida especialmente
+            para a produção de pastéis com massa fina, crocante e que não
+            absorve gordura em excesso. Com formulação balanceada de glúten e
+            absorção de água, proporciona fácil manuseio, extensibilidade ideal
+            e resultado dourado e crocante na fritura. A escolha certa para
+            pastéis artesanais de qualidade superior.
           </p>
-
           <div class="produto-tags">
             <span class="produto-tag"
-              ><i class="ri-fire-line"></i> Ideal para pães</span
+              ><i class="ri-fire-line"></i> Pastel crocante</span
             >
             <span class="produto-tag"
-              ><i class="ri-restaurant-line"></i> Massas frescas</span
+              ><i class="ri-restaurant-line"></i> Massa fina</span
             >
             <span class="produto-tag"
-              ><i class="ri-cake-line"></i> Confeitaria</span
+              ><i class="ri-thumb-up-line"></i> Fácil manuseio</span
             >
             <span class="produto-tag"
               ><i class="ri-leaf-line"></i> Sem aditivos</span
             >
           </div>
-
           <div class="produto-ctas">
             <button
               class="btn-comprar"
-              onclick="window.open('#loja', '_blank')"
+              onclick="
+                window.open(
+                  'https://lojadotrigo.com.br/especiais/pastel/farinha-para-pastel-5-kg',
+                  '_blank',
+                )
+              "
             >
               <i class="ri-shopping-cart-line"></i>
               Comprar agora
@@ -153,11 +145,10 @@
         </div>
       </section>
 
-      <!-- ── DETALHES + TABELA NUTRICIONAL ── -->
       <section class="produto-detalhes">
         <div class="produto-caracteristicas">
           <div>
-            <h2>Por que a Puríssima?</h2>
+            <h2>Por que a Esp. Pastel?</h2>
             <img
               src="/svg/linha1.svg"
               alt=""
@@ -165,46 +156,43 @@
               style="margin: 0.5rem 0 1rem"
             />
             <p>
-              A Puríssima é produzida com o trigo mais seleto, processado com
-              tecnologia de moagem a frio para preservar todos os nutrientes e
-              garantir uma farinha de cor branca natural, sem alvejantes. O
-              resultado é uma farinha de desempenho superior, consistente e
-              confiável para qualquer aplicação culinária.
+              Desenvolvida em parceria com pasteleiros profissionais, a Farinha
+              Especial Pastel Venturelli tem o equilíbrio perfeito entre
+              extensibilidade e resistência, permitindo abrir a massa bem fina
+              sem rasgos e garantindo pastéis dourados, crocantes e com menor
+              absorção de óleo após a fritura.
             </p>
           </div>
-
           <div class="atributos-lista">
+            <div class="atributo-item">
+              <div class="atributo-icone"><i class="ri-magic-line"></i></div>
+              <div class="atributo-texto">
+                <strong>Massa extensível e resistente</strong>
+                <span
+                  >Abre fino sem rasgar, ideal para pastéis com bordas
+                  perfeitas.</span
+                >
+              </div>
+            </div>
+            <div class="atributo-item">
+              <div class="atributo-icone"><i class="ri-fire-line"></i></div>
+              <div class="atributo-texto">
+                <strong>Crocância garantida</strong>
+                <span
+                  >Resultado dourado e crocante mesmo após o
+                  reaquecimento.</span
+                >
+              </div>
+            </div>
             <div class="atributo-item">
               <div class="atributo-icone">
                 <i class="ri-contrast-drop-line"></i>
               </div>
               <div class="atributo-texto">
-                <strong>Cor branca natural</strong>
+                <strong>Baixa absorção de gordura</strong>
                 <span
-                  >Sem alvejantes ou aditivos químicos no processo de
-                  branqueamento.</span
-                >
-              </div>
-            </div>
-            <div class="atributo-item">
-              <div class="atributo-icone">
-                <i class="ri-bubble-chart-line"></i>
-              </div>
-              <div class="atributo-texto">
-                <strong>Glúten forte e elástico</strong>
-                <span
-                  >Rede de glúten estável para massas que crescem com
-                  uniformidade.</span
-                >
-              </div>
-            </div>
-            <div class="atributo-item">
-              <div class="atributo-icone"><i class="ri-scales-line"></i></div>
-              <div class="atributo-texto">
-                <strong>Absorção de água controlada</strong>
-                <span
-                  >Facilita o manuseio e garante consistência no resultado
-                  final.</span
+                  >Pastéis mais leves e menos oleosos sem comprometer o
+                  sabor.</span
                 >
               </div>
             </div>
@@ -213,7 +201,7 @@
               <div class="atributo-texto">
                 <strong>Disponível em 1 kg e 5 kg</strong>
                 <span
-                  >Para o uso doméstico e para quem produz em maior
+                  >Para uso doméstico e produção artesanal em maior
                   volume.</span
                 >
               </div>
@@ -221,7 +209,6 @@
           </div>
         </div>
 
-        <!-- TABELA NUTRICIONAL -->
         <div class="tabela-nutricional">
           <h2>Informação Nutricional</h2>
           <img
@@ -230,18 +217,15 @@
             class="linha-marca"
             style="margin: 0.5rem 0 1.5rem"
           />
-
           <div class="tabela-box">
             <div class="tabela-header">
               <strong>Informação Nutricional</strong>
-              <p>Farinha de Trigo Especial Tipo 1 — Puríssima</p>
+              <p>Farinha de Trigo Especial — Esp. Pastel</p>
             </div>
-
             <div class="tabela-porcao">
               <span>Porção de <strong>50 g</strong></span>
               <span>(%VD*)</span>
             </div>
-
             <div class="tabela-row destaque">
               <span>Valor Energético</span>
               <span
@@ -310,13 +294,11 @@
               <span>Ácido Fólico</span>
               <span>60 mcg &nbsp; <em>15%</em></span>
             </div>
-
             <div class="tabela-vd">
               * % Valores Diários com base em uma dieta de 2.000 kcal.<br />
               ** Valor diário não estabelecido.
             </div>
           </div>
-
           <p
             style="
               font-size: 0.75rem;
@@ -333,38 +315,44 @@
         </div>
       </section>
 
-      <!-- ── CTA FINAL ── -->
       <section class="produto-cta-final">
         <div class="produto-cta-final__texto">
-          <h2>Leve a Puríssima para a sua cozinha</h2>
+          <h2>Leve a Esp. Pastel para a sua cozinha</h2>
           <p>
             Disponível em embalagens de 1 kg e 5 kg. Encontre nas principais
             redes e lojas online.
           </p>
         </div>
-
         <div class="produto-cta-final__acoes">
-          <button class="btn-comprar" onclick="window.open('#loja', '_blank')">
+          <button
+            class="btn-comprar"
+            onclick="
+              window.open(
+                'https://lojadotrigo.com.br/especiais/pastel/farinha-para-pastel-5-kg',
+                '_blank',
+              )
+            "
+          >
             <i class="ri-shopping-cart-2-line"></i>
             Comprar agora
           </button>
-
-          <span class="disponivel-em">Também disponível em:</span>
-
           <div class="lojas-lista">
-            <button class="loja-btn" onclick="window.open('#', '_blank')">
-              <i class="ri-store-2-line"></i> Loja Online
-            </button>
-            <button class="loja-btn" onclick="window.open('#', '_blank')">
-              <i class="ri-map-pin-line"></i> Encontrar loja física
-            </button>
-            <button class="loja-btn" onclick="window.open('#', '_blank')">
-              <i class="ri-whatsapp-line"></i> Falar com revendedor
+            <button
+              class="btn-comprar"
+              onclick="
+                window.open(
+                  'https://portal.moinhoglobo.com.br/venturelli/',
+                  '_blank',
+                )
+              "
+            >
+              <i class="ri-map-pin-line"></i> Encontrar supermercado
             </button>
           </div>
         </div>
       </section>
     </main>
+
     <footer class="footer1 blue-bg white-text flex-center">
       <div class="container">
         <img
@@ -469,9 +457,7 @@
     <script src="gsap.js"></script>
     <script src="menu.js"></script>
     <script>
-      // Animações de entrada
       gsap.registerPlugin(ScrollTrigger);
-
       gsap.from(".produto-hero__visual img", {
         y: 40,
         opacity: 0,
@@ -487,7 +473,6 @@
         stagger: 0.12,
         delay: 0.4,
       });
-
       gsap.from(".atributo-item", {
         scrollTrigger: { trigger: ".atributos-lista", start: "top 80%" },
         x: -30,
@@ -496,7 +481,6 @@
         ease: "power2.out",
         stagger: 0.1,
       });
-
       gsap.from(".tabela-box", {
         scrollTrigger: { trigger: ".tabela-nutricional", start: "top 80%" },
         y: 30,
@@ -504,7 +488,6 @@
         duration: 0.8,
         ease: "power2.out",
       });
-
       gsap.from(".produto-cta-final__texto, .produto-cta-final__acoes", {
         scrollTrigger: { trigger: ".produto-cta-final", start: "top 80%" },
         y: 20,

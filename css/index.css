@@ -116,6 +116,11 @@ a {
   color: var(--color08);
   text-decoration: none;
 }
+a button {
+  font: var(--h4);
+  color: var(--color08);
+  text-decoration: none;
+}
 button {
   width: fit-content;
   all: unset;
@@ -318,7 +323,7 @@ section {
 .btn1:hover {
   background: var(--color08);
 }
-.btn1:hover > a,
+.btn1:hover,
 .btn1:hover > i {
   color: var(--color04);
 }
@@ -327,14 +332,14 @@ section {
 .btn2 {
   background-color: var(--color08);
 }
-.btn2 > a,
+.btn2,
 .btn2 > i {
   color: var(--color03);
 }
 .btn2:hover {
   background: var(--color03);
 }
-.btn2:hover > a,
+.btn2:hover,
 .btn2:hover > i {
   color: var(--color08);
 }
@@ -355,9 +360,22 @@ section {
 .btn4:hover {
   background: var(--color07);
 }
-.btn4:hover > a,
+.btn4:hover,
 .btn4:hover > i {
   color: var(--color06);
+}
+
+/* Button fundo hover azul */
+
+.btn5 {
+  background-color: var(--color03);
+}
+.btn5:hover {
+  background: var(--color01);
+}
+.btn5:hover,
+.btn5:hover > i {
+  color: var(--color07);
 }
 
 /* header */
@@ -994,6 +1012,79 @@ footer > .container > .col3 {
   }
 }
 
+/* ── Wrapper ── */
+.footer-dropdown {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.footer-dropdown-btn {
+  all: unset;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+  font-size: 15px; /* igual a footer a, p */
+  color: var(--color08);
+  text-decoration: none;
+  width: 100%;
+  box-sizing: border-box;
+  transition: color 0.2s ease;
+  user-select: none;
+}
+
+.footer-dropdown-btn:hover {
+  color: var(--color07);
+}
+
+/* ── Seta giratória ── */
+.footer-dropdown-icon {
+  font-size: 1.1em;
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.footer-dropdown.is-open .footer-dropdown-icon {
+  transform: rotate(180deg);
+}
+
+/* ── Lista de sub-itens ── */
+.footer-dropdown-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 0; /* controlado via GSAP */
+}
+
+.footer-dropdown-list li {
+  padding-left: 0.75rem;
+  border-left: 2px solid hsla(0, 0%, 100%, 0.2);
+  margin-top: 0.4rem;
+  transition: border-color 0.2s;
+}
+
+.footer-dropdown-list li:hover {
+  border-color: var(--color03);
+}
+
+.footer-dropdown-list a {
+  font-size: 13px; /* um passo abaixo dos itens principais */
+  color: hsla(0, 0%, 92%, 0.7);
+  display: block;
+  padding: 0.25rem 0;
+  transition:
+    color 0.2s ease,
+    padding-left 0.15s ease;
+}
+
+.footer-dropdown-list a:hover {
+  color: var(--color07);
+  padding-left: 0.35rem;
+}
+
 /* Consumidor */
 
 #consumidor-img {
@@ -1101,9 +1192,6 @@ footer > .container > .col3 {
   #alma-italiana1 {
     width: 100%;
   }
-}
-#atributos {
-  margin-top: var(--spacing6);
 }
 #farinha1 {
   height: 650px;
@@ -1444,39 +1532,6 @@ footer > .container > .col3 {
   align-items: center;
   gap: 12px;
 }
-
-.btn1 {
-  background: #4caf50;
-  color: #fff;
-  border: none;
-  border-radius: 30px;
-  padding: 13px 30px;
-  font-size: 15px;
-  cursor: pointer;
-  font-family: sans-serif;
-  font-weight: 500;
-  transition:
-    background 0.2s,
-    transform 0.1s;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.btn1:hover {
-  background: #43a047;
-}
-.btn1:active {
-  transform: scale(0.97);
-}
-.btn1:disabled {
-  background: rgba(255, 255, 255, 0.15);
-  color: rgba(255, 255, 255, 0.4);
-  cursor: default;
-}
-.btn1 i {
-  font-size: 18px;
-}
-
 .selected-list {
   font-size: 12px;
   color: rgba(255, 255, 255, 0.45);
@@ -1496,7 +1551,14 @@ footer > .container > .col3 {
   position: relative;
   overflow: hidden;
 }
-
+.produto-hero-pro {
+  background-color: var(--color09);
+  display: flex;
+  align-items: stretch;
+  min-height: 80vh;
+  position: relative;
+  overflow: hidden;
+}
 /* Coluna esquerda: imagem do produto */
 .produto-hero__visual {
   flex: 1;
@@ -2004,7 +2066,7 @@ footer > .container > .col3 {
   font-size: 0.72rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: rgba(255, 255, 255, 0.45);
+  color: var(--color08);
 }
 .form-group input,
 .form-group select,
@@ -2012,8 +2074,8 @@ footer > .container > .col3 {
   all: unset;
   width: 100%;
   padding: var(--spacing3) 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  color: var(--color07);
+  border-bottom: 1px solid var(--color08);
+  color: var(--color08);
   font: var(--p);
   background: transparent;
   box-sizing: border-box;
@@ -2027,7 +2089,7 @@ footer > .container > .col3 {
 }
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--color08);
 }
 .form-group textarea {
   min-height: 90px;
@@ -2035,7 +2097,7 @@ footer > .container > .col3 {
 }
 .form-group select {
   cursor: pointer;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--color08);
 }
 .form-group select option {
   color: var(--color01);
@@ -2043,7 +2105,7 @@ footer > .container > .col3 {
 }
 
 .form-contato .checkbox-label {
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--color08);
   font-size: 0.82rem;
 }
 .form-contato .link-politica {
@@ -2129,7 +2191,7 @@ footer > .container > .col3 {
   all: unset;
   padding: 0.4rem 1.2rem;
   border-radius: 30px;
-  border: 1.5px solid rgba(11, 23, 74, 0.18);
+  border: 1.5px solid var(--color01);
   font: var(--p);
   font-size: 0.85rem;
   color: var(--color10);
@@ -2154,7 +2216,7 @@ footer > .container > .col3 {
 }
 
 .faq-item {
-  border-bottom: 1px solid rgba(11, 23, 74, 0.1);
+  border-bottom: 1px solid var(--color01);
   display: flex;
   flex-direction: column;
 }

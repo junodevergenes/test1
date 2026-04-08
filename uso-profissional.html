@@ -11,7 +11,7 @@
     />
   </head>
   <body>
-    <header>
+    <header class="black-bg">
       <a href="/index.html">
         <img
           class="logo"
@@ -23,9 +23,8 @@
       <button class="ham" aria-label="Abrir menu" aria-expanded="false">
         <img src="/svg/menu-icon.svg" alt="" aria-hidden="true" />
       </button>
-
       <nav
-        class="green-bg padding3"
+        class="grey-bg padding3"
         role="navigation"
         aria-label="Menu principal"
       >
@@ -47,12 +46,10 @@
           </button>
           <ul class="nav-dropdown-menu" id="dropdown-produtos" role="menu">
             <li role="none">
-              <a href="/produtos-consumidor1.html" role="menuitem"
-                >Uso Diário</a
-              >
+              <a href="/uso-diario.html" role="menuitem">Uso Diário</a>
             </li>
             <li role="none">
-              <a href="/produtos-consumidor2.html" role="menuitem"
+              <a href="/uso-profissional.html" role="menuitem"
                 >Uso Profissional</a
               >
             </li>
@@ -60,9 +57,7 @@
               <a href="/alma-italiana.html" role="menuitem">Alma Italiana</a>
             </li>
             <li role="none">
-              <a href="/produtos-consumidor3.html" role="menuitem"
-                >Como Comprar</a
-              >
+              <a href="/como-comprar.html" role="menuitem">Como Comprar</a>
             </li>
           </ul>
         </div>
@@ -95,25 +90,25 @@
     <main>
       <section class="hero-parallax">
         <div class="layer layer-bg">
-          <img src="/img/banner2-bg.png" alt="" />
+          <img src="/img/banner3-layer-bg.png" alt="" />
         </div>
         <div class="layer layer-shape">
-          <img src="/img/banner2-layer-shape.png" alt="" />
+          <img src="/img/banner3-layer-shape.png" alt="" />
         </div>
         <div class="layer layer-foreground">
-          <img src="/img/banner2-layer-foreground.png" alt="" />
+          <img src="/img/banner3-layer-foreground.png" alt="" />
         </div>
         <div class="hero-content">
           <h1>
-            <span>Colecione</span><br />
-            <span>Momentos Incomparáveis</span><br />
-            <span>fazendo você mesmo</span>
+            <span class="black-bg">Colecione</span><br />
+            <span class="black-bg">Momentos Incomparáveis</span><br />
+            <span class="black-bg">para seus clientes</span>
           </h1>
         </div>
       </section>
 
       <section
-        class="consumidor section6 padding6 blue-bg white-text flex-center"
+        class="consumidor section6 padding6 black-bg white-text flex-center"
       >
         <div class="container flex-center">
           <div class="text-box">
@@ -139,13 +134,13 @@
       </section>
 
       <section class="produtos flex-center">
-        <div class="container flex-center padding6">
+        <div class="container flex-center padding4 gap2">
           <!-- Purissima -->
-          <a href="produto1.html">
-            <div class="card-produto1 white-text">
+          <a href="purissima-profissional.html">
+            <div class="card-produto2 white-text">
               <img
                 class="img-produto"
-                src="/Produtos/venturelli-purissima.png"
+                src="/Produtos/FRENTE-PURÍSSIMA-1.png"
                 alt="Farinha Venturelli Puríssima"
               />
               <div class="produto-desc">
@@ -154,98 +149,66 @@
               </div>
             </div>
           </a>
-          <!-- Gourmet -->
-          <div class="card-produto1 white-text">
-            <img
-              class="img-produto"
-              src="/Produtos/venturelli-gourmet.png"
-              alt="Farinha Venturelli Gourmet"
-            />
-            <div class="produto-desc">
-              <h4>Gourmet</h4>
-              <img class="mais-icon" src="/svg/plus-icon.svg" alt="Mais" />
+          <!-- Forneria -->
+          <a href="/forneria-profissional.html">
+            <div class="card-produto2 white-text">
+              <img
+                class="img-produto"
+                src="/Produtos/FRENTE-FORNERIA-1.png"
+                alt="Farinha Venturelli Forneria"
+              />
+              <div class="produto-desc">
+                <h4>Forneria</h4>
+                <img class="mais-icon" src="/svg/plus-icon.svg" alt="Mais" />
+              </div>
             </div>
-          </div>
-          <!-- Integral -->
-          <div class="card-produto1 white-text">
-            <img
-              class="img-produto"
-              src="/Produtos/venturelli-integral.png"
-              alt="Farinha Venturelli Integral"
-            />
-            <div class="produto-desc">
-              <h4>Integral</h4>
-              <img class="mais-icon" src="/svg/plus-icon.svg" alt="Mais" />
+          </a>
+          <!-- Forneria Mix -->
+          <a href="/forneria-mix-profissional.html">
+            <div class="card-produto2 white-text">
+              <img
+                class="img-produto"
+                src="/Produtos/FRENTE-FORNERIA-MIX-1.png"
+                alt="Farinha Venturelli Forneria Mix"
+              />
+              <div class="produto-desc">
+                <h4>Forneria Mix</h4>
+                <img class="mais-icon" src="/svg/plus-icon.svg" alt="Mais" />
+              </div>
             </div>
-          </div>
-          <!-- Semolina -->
-          <div class="card-produto1 white-text">
-            <img
-              class="img-produto"
-              src="/Produtos/venturelli-semolina.png"
-              alt="Farinha Venturelli Semolina"
-            />
-            <div class="produto-desc">
-              <h4>Semolina</h4>
-              <img class="mais-icon" src="/svg/plus-icon.svg" alt="Mais" />
+          </a>
+          <!-- Maestria -->
+          <a href="/maestria-profissional.html">
+            <div class="card-produto2 white-text">
+              <img
+                class="img-produto"
+                src="/Produtos/FRENTE-MAESTRIA-1.png"
+                alt="Farinha Venturelli Maestria"
+              />
+              <div class="produto-desc">
+                <h4>Maestria</h4>
+                <img class="mais-icon" src="/svg/plus-icon.svg" alt="Mais" />
+              </div>
             </div>
-          </div>
-          <!-- Esp. Pastel -->
-          <div class="card-produto1 white-text">
-            <img
-              class="img-produto"
-              src="/Produtos/venturelli-esp-pastel.png"
-              alt="Farinha Venturelli Esp. Pastel"
-            />
-            <div class="produto-desc">
-              <h4>Esp. Pastel</h4>
-              <img class="mais-icon" src="/svg/plus-icon.svg" alt="Mais" />
+          </a>
+          <!-- Maestria Mix -->
+          <a href="/maestria-mix-profissional.html">
+            <div class="card-produto2 white-text">
+              <img
+                class="img-produto"
+                src="/Produtos/FRENTE-MAESTRIA-MIX-1.png"
+                alt="Farinha Venturelli Maestria Mix"
+              />
+              <div class="produto-desc">
+                <h4>Maestria Mix</h4>
+                <img class="mais-icon" src="/svg/plus-icon.svg" alt="Mais" />
+              </div>
             </div>
-          </div>
-          <!-- Esp. Pizza -->
-          <div class="card-produto1 white-text">
-            <img
-              class="img-produto"
-              src="/Produtos/venturelli-esp-pizza.png"
-              alt="Farinha Venturelli Esp. Pizza"
-            />
-            <div class="produto-desc">
-              <h4>Esp. Pizza</h4>
-              <img class="mais-icon" src="/svg/plus-icon.svg" alt="Mais" />
-            </div>
-          </div>
-          <!-- Fermento Biológico -->
-          <div class="card-produto1 white-text">
-            <img
-              class="img-produto"
-              src="/Produtos/venturelli-purissima.png"
-              alt="Fermento Biológico"
-            />
-            <div class="produto-desc">
-              <h4>Fermento Biológico</h4>
-              <img class="mais-icon" src="/svg/plus-icon.svg" alt="Mais" />
-            </div>
-          </div>
-          <!-- Panko -->
-          <div class="card-produto1 white-text">
-            <img
-              class="img-produto"
-              src="/Produtos/venturelli-panko.png"
-              alt="Farinha Venturelli Panko"
-            />
-            <div class="produto-desc">
-              <h4>Panko</h4>
-              <img class="mais-icon" src="/svg/plus-icon.svg" alt="Mais" />
-            </div>
-          </div>
+          </a>
         </div>
-        <button class="btn1">
-          <a href="#">Catálogo de Produtos</a
-          ><i class="ri-arrow-right-up-line"></i>
-        </button>
       </section>
 
-      <section class="section4 white-text blue-bg flex-center padding6">
+      <section class="section4 white-text black-bg flex-center padding6">
         <div class="text-box center flex-center">
           <h2>Receitas Cheias de Sabor</h2>
           <img src="/svg/linha1.svg" alt="" class="linha-marca" />
@@ -278,10 +241,6 @@
             </p>
           </div>
         </div>
-        <button class="btn1">
-          <a href="">Quero acessar todas as receitas</a
-          ><i class="ri-arrow-right-up-line"></i>
-        </button>
       </section>
     </main>
 
@@ -293,38 +252,100 @@
     <script src="carrossel.js"></script>
     <script src="banner.js"></script>
   </body>
-  <footer class="footer2 blue-bg white-text flex-center">
+  <footer class="footer1 blue-bg white-text flex-center">
     <div class="container">
-      <img class="logo-footer" src="/svg/logo-footer-cor.svg" alt="" />
+      <img
+        class="logo-footer"
+        src="/svg/logo-footer-cor.svg"
+        alt="Famiglia Venturelli"
+      />
+
       <div class="col1">
         <h4><strong>Contato</strong></h4>
-
         <p>(43) 3232.8000</p>
         <p>Rua Senador Souza Naves, 1321</p>
         <p>Sertanópolis | PR</p>
       </div>
+
       <div class="col2">
         <h4><strong>Menu</strong></h4>
-        <a href="#">Início</a>
-        <a href="#">Produtos</a>
-        <a href="#">Receitas</a>
-        <a href="#">Momentos incomparáveis</a>
-        <a href="#">Contato</a>
-        <a href="#">Trabalhe Conosco</a>
+
+        <a href="/index.html">Início</a>
+
+        <!-- ── Dropdown: Produtos ── -->
+        <div class="footer-dropdown" id="footer-dropdown-produtos">
+          <button
+            class="footer-dropdown-btn"
+            aria-expanded="false"
+            aria-controls="footer-dropdown-list"
+          >
+            Produtos
+            <i
+              class="ri-arrow-down-s-line footer-dropdown-icon"
+              aria-hidden="true"
+            ></i>
+          </button>
+          <ul
+            class="footer-dropdown-list"
+            id="footer-dropdown-list"
+            aria-hidden="true"
+          >
+            <li><a href="/uso-diario.html">Uso Diário</a></li>
+            <li><a href="/uso-profissional.html">Uso Profissional</a></li>
+            <li><a href="/alma-italiana.html">Alma Italiana</a></li>
+            <li><a href="/como-comprar.html">Como Comprar</a></li>
+          </ul>
+        </div>
+
+        <a
+          href="https://materiais.moinhoglobo.com.br/inscricao-momentos-incomparaveis"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Momentos Incomparáveis</a
+        >
+
+        <a
+          href="https://materiais.moinhoglobo.com.br/formulario-materiais"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Livro de Receitas</a
+        >
+
+        <a href="/contato.html">Contato</a>
+
+        <a
+          href="https://moinhoglobo.com.br/sobre-nos/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Trabalhe Conosco</a
+        >
       </div>
+
       <div class="col3">
         <p>Todos os direitos reservados</p>
         <div class="social-icons">
-          <a href=""><img src="/svg/facebook-icon.svg" alt="facebook" /></a>
-          <a href=""><img src="/svg/instagram-icon.svg" alt="instagram" /></a>
-          <a href=""><img src="/svg/youtube-icon.svg" alt="youtube" /></a>
-          <a href=""><img src="/svg/pinterest-icon.svg" alt="pinterest" /></a>
-          <a href=""><img src="/svg/tiktok-icon.svg" alt="tiktok" /></a>
-          <a href=""><img src="/svg/linkedin-icon.svg" alt="linkedin" /></a>
+          <a href="https://www.facebook.com/famigliaventurellioficial"
+            ><img src="/svg/facebook-icon.svg" alt="facebook"
+          /></a>
+          <a href="https://www.instagram.com/famiglia.venturelli"
+            ><img src="/svg/instagram-icon.svg" alt="instagram"
+          /></a>
+          <a href="https://www.youtube.com/@famigliaventurelli"
+            ><img src="/svg/youtube-icon.svg" alt="youtube"
+          /></a>
+          <a href="https://br.pinterest.com/famigliaventurelli/"
+            ><img src="/svg/pinterest-icon.svg" alt="pinterest"
+          /></a>
+          <a href="https://www.tiktok.com/@famiglia.venturelli"
+            ><img src="/svg/tiktok-icon.svg" alt="tiktok"
+          /></a>
+          <a href="https://www.linkedin.com/company/moinho-globo-alimentos-s-a/"
+            ><img src="/svg/linkedin-icon.svg" alt="linkedin"
+          /></a>
         </div>
         <button class="btn1">
-          <a href="#">Receba nossas receitas</a
-          ><i class="ri-arrow-right-up-line"></i>
+          <a href="/contato.html#newsletter">Receba nossas receitas</a>
+          <i class="ri-arrow-right-up-line"></i>
         </button>
       </div>
     </div>

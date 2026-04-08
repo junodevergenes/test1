@@ -561,3 +561,93 @@
     gsap.set(menu, { visibility: "hidden", pointerEvents: "none" });
   });
 })();
+
+/* Footer dropdown */
+(function () {
+  const wrap = document.getElementById("footer-dropdown-produtos");
+  if (!wrap) return; // sai se o footer não estiver na página
+
+  const btn = wrap.querySelector(".footer-dropdown-btn");
+  const list = wrap.querySelector(".footer-dropdown-list");
+  const items = list.querySelectorAll("a");
+  let isOpen = false;
+  let anim = null;
+
+  /* Estado inicial */
+  gsap.set(list, { height: 0 });
+  gsap.set(items, { opacity: 0, x: -6 });
+
+  function open() {
+    isOpen = true;
+    wrap.classList.add("is-open");
+    btn.setAttribute("aria-expanded", "true");
+    list.setAttribute("aria-hidden", "false");
+
+    /* Altura real da lista */
+    gsap.set(list, { height: "auto" });
+    const h = list.offsetHeight;
+    gsap.set(list, { height: 0 });
+
+    if (anim) anim.kill();
+    anim = gsap.timeline();
+
+    anim.to(list, {
+      height: h,
+      duration: 0.35,
+      ease: "power2.out",
+    });
+
+    anim.to(
+      items,
+      {
+        opacity: 1,
+        x: 0,
+        duration: 0.28,
+        ease: "power2.out",
+        stagger: 0.06,
+      },
+      "-=0.15",
+    );
+  }
+
+  function close() {
+    isOpen = false;
+    wrap.classList.remove("is-open");
+    btn.setAttribute("aria-expanded", "false");
+    list.setAttribute("aria-hidden", "true");
+
+    if (anim) anim.kill();
+    anim = gsap.timeline();
+
+    anim.to(items, {
+      opacity: 0,
+      x: -6,
+      duration: 0.18,
+      ease: "power2.in",
+      stagger: 0.03,
+    });
+
+    anim.to(
+      list,
+      {
+        height: 0,
+        duration: 0.28,
+        ease: "power2.in",
+      },
+      "-=0.08",
+    );
+  }
+
+  btn.addEventListener("click", () => {
+    if (isOpen) close();
+    else open();
+  });
+
+  /* Acessibilidade: Escape fecha */
+  btn.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && isOpen) {
+      close();
+      btn.focus();
+    }
+  });
+})();
